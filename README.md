@@ -6,9 +6,7 @@ A curated collection of cinematic, production-ready UI components and terminal s
 
 ## 🎬 Component Preview (`Terminal-Simulator`)
 
-<video src="https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4" autoplay loop muted playsinline width="100%"></video>
-
-> [Watch Full Preview Video](https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4)
+![Terminal Simulator Preview](https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.gif)
 
 ---
 
