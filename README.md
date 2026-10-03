@@ -4,6 +4,14 @@ A curated collection of cinematic, production-ready UI components and terminal s
 
 ---
 
+## 🎬 Component Preview (`Terminal-Simulator`)
+
+<video src="https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4" autoplay loop muted playsinline width="100%"></video>
+
+> [Watch Full Preview Video](https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4)
+
+---
+
 ## Available Components
 
 ### 1. Terminal Simulator (`Terminal-Simulator`)
@@ -29,14 +37,5 @@ npx malesngonten add Terminal-Simulator
 npx github:malesngonten/malesngonten add Terminal-Simulator
 ```
 
-### Required Dependencies
-Make sure you have installed the required Remotion packages:
-```bash
-npm install remotion @remotion/media zod
-```
-
-## Component Preview
-
-[Watch Terminal Simulator Preview](https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4)
-
-<video src="https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4" controls width="100%"></video>
+### Required Dependencies & Auto-Install
+The CLI will automatically install required dependencies (`remotion`, `@remotion/media`, `zod`).
