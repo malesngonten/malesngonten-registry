@@ -21,6 +21,11 @@ A state-of-the-art cinematic code typing simulator.
 Add components directly to your Remotion project using the `malesngonten` CLI:
 
 ```bash
+npx malesngonten add Terminal-Simulator
+```
+
+*(If running directly from GitHub before npm publication:)*
+```bash
 npx github:malesngonten/malesngonten add Terminal-Simulator
 ```
 
