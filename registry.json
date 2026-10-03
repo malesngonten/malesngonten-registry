@@ -1,0 +1,26 @@
+{
+  "$schema": "https://malesngonten.dev/schema/registry.json",
+  "name": "malesngonten-registry",
+  "components": {
+    "Terminal-Simulator": {
+      "name": "Terminal Simulator",
+      "description": "Cinematic code typing animation component for Remotion with pitch-preserving micro-samples, multi-stage zoom, and rack-focus blur.",
+      "type": "registry:component",
+      "dependencies": [
+        "zod",
+        "remotion",
+        "@remotion/media"
+      ],
+      "files": [
+        {
+          "path": "components/terminal-simulator/TypingDemo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/terminal-simulator/liquid-shader.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  }
+}
