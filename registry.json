@@ -20,7 +20,8 @@
           "path": "components/terminal-simulator/liquid-shader.tsx",
           "type": "registry:component"
         }
-      ]
+      ],
+      "preview": "https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4"
     }
   }
 }

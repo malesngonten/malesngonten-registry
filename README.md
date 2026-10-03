@@ -34,3 +34,9 @@ Make sure you have installed the required Remotion packages:
 ```bash
 npm install remotion @remotion/media zod
 ```
+
+## Component Preview
+
+[Watch Terminal Simulator Preview](https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4)
+
+<video src="https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4" controls width="100%"></video>
