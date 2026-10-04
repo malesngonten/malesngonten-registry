@@ -22,6 +22,25 @@
         }
       ],
       "preview": "https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4"
+    },
+    "Animated-Gradient": {
+      "name": "Animated Gradient",
+      "description": "Cinematic WebGL shader animated gradient component for Remotion supporting mist, lava, and vortex variants with frame-driven time synchronization.",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion",
+        "zod"
+      ],
+      "files": [
+        {
+          "path": "components/animated-gradient/animated-gradient.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/animated-gradient/SKILL.md",
+          "type": "registry:component"
+        }
+      ]
     }
   }
 }
