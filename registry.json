@@ -21,6 +21,10 @@
           "type": "registry:component"
         },
         {
+          "path": "components/typography/terminal-simulator/terminal-simulator.element.tsx",
+          "type": "registry:component"
+        },
+        {
           "path": "components/typography/terminal-simulator/SKILL.md",
           "type": "registry:component"
         }
@@ -38,6 +42,10 @@
       "files": [
         {
           "path": "components/backgrounds/animated-gradient/animated-gradient.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/animated-gradient/animated-gradient.element.tsx",
           "type": "registry:component"
         },
         {
@@ -60,6 +68,10 @@
       "files": [
         {
           "path": "components/mockups/phonemockup/phonemockup.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/phonemockup/phonemockup.element.tsx",
           "type": "registry:component"
         },
         {
