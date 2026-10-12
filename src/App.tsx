@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { 
   Search, 
   Terminal, 
@@ -12,7 +12,9 @@ import {
   Cpu, 
   Zap, 
   Smartphone, 
-  X
+  X,
+  Play,
+  Pause
 } from 'lucide-react';
 import registryData from '../registry.json';
 
@@ -52,6 +54,93 @@ export function categorizeComponent(path: string, name: string): string {
     return 'mockups';
   }
   return 'ui';
+}
+
+// Live Simulated Preview Box Component
+function LivePreviewBox({ name, description }: { name: string; description: string }) {
+  const [frame, setFrame] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  useEffect(() => {
+    if (!isPlaying) return;
+    const interval = setInterval(() => {
+      setFrame((prev) => (prev + 1) % 120);
+    }, 33); // ~30fps
+    return () => clearInterval(interval);
+  }, [isPlaying]);
+
+  const progress = (frame % 60) / 60;
+  const isTyping = name.toLowerCase().includes('terminal') || name.toLowerCase().includes('type') || name.toLowerCase().includes('code');
+  const isPhone = name.toLowerCase().includes('phone') || name.toLowerCase().includes('mockup');
+  const isGradient = name.toLowerCase().includes('gradient') || name.toLowerCase().includes('shader') || name.toLowerCase().includes('background');
+
+  return (
+    <div className="relative w-full h-44 bg-slate-950 rounded-xl overflow-hidden border border-slate-800 flex items-center justify-center group/preview">
+      {/* Background Effect */}
+      {isGradient ? (
+        <div 
+          className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-80 blur-lg transition-transform duration-1000"
+          style={{ transform: `scale(${1 + Math.sin(frame * 0.05) * 0.1})` }}
+        />
+      ) : (
+        <div className="absolute inset-0 bg-[radial-gradient(#312e81_1px,transparent_1px)] [background-size:16px_16px] opacity-20" />
+      )}
+
+      {/* Simulated Content */}
+      <div className="relative z-10 p-4 text-center max-w-xs">
+        {isTyping ? (
+          <div className="bg-slate-900/90 border border-slate-800 rounded-lg p-3 font-mono text-left text-xs text-indigo-300 shadow-xl">
+            <div className="flex items-center space-x-1.5 mb-2 pb-1.5 border-b border-slate-800">
+              <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
+              <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
+              <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
+              <span className="text-[10px] text-slate-500 ml-2">terminal.tsx</span>
+            </div>
+            <p className="text-emerald-400">$ npx remotion render</p>
+            <p className="text-slate-400 mt-1">Compiling {name.toLowerCase()}...</p>
+            <div className="mt-2 w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+              <div className="bg-indigo-500 h-full transition-all duration-75" style={{ width: `${progress * 100}%` }} />
+            </div>
+          </div>
+        ) : isPhone ? (
+          <div className="w-24 h-44 bg-slate-900 border-2 border-slate-700 rounded-2xl mx-auto shadow-2xl flex flex-col p-1.5 transition-transform duration-300 hover:scale-105"
+               style={{ transform: `translateY(${Math.sin(frame * 0.05) * 4}px)` }}>
+            <div className="w-10 h-2 bg-slate-800 rounded-full mx-auto mb-1" />
+            <div className="flex-1 bg-indigo-950/40 rounded-xl flex items-center justify-center p-2 text-[10px] text-indigo-300 font-bold text-center">
+              {name}
+            </div>
+          </div>
+        ) : (
+          <div className="space-y-2">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 animate-pulse">
+              Live Preview
+            </span>
+            <h4 className="text-lg font-bold text-white tracking-tight"
+                style={{
+                  opacity: Math.min(1, progress * 2),
+                  transform: `translateY(${(1 - Math.min(1, progress * 2)) * 15}px)`
+                }}>
+              {name}
+            </h4>
+            <p className="text-xs text-slate-400 line-clamp-1">{description}</p>
+          </div>
+        )}
+      </div>
+
+      {/* Play/Pause control overlay on hover */}
+      <div className="absolute bottom-2 right-2 z-20 opacity-0 group-hover/preview:opacity-100 transition-opacity">
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsPlaying(!isPlaying);
+          }}
+          className="p-1.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-300 border border-slate-700 shadow"
+        >
+          {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
+        </button>
+      </div>
+    </div>
+  );
 }
 
 export default function App() {
@@ -122,13 +211,13 @@ export default function App() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            <span>1-Click CLI Installation & Instant Source Access</span>
+            <span>Live Client-Side Animations & 1-Click CLI</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
             Cinematic Motion for <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">Remotion</span>
           </h2>
           <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
-            Explore 250+ production-ready components. Install instantly via CLI or inspect source code on GitHub.
+            Explore 250+ production-ready components with live animated previews. Install instantly via CLI.
           </p>
 
           {/* Search Bar */}
@@ -178,16 +267,21 @@ export default function App() {
               <div
                 key={key}
                 onClick={() => setSelectedComponent([key, comp])}
-                className="group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-2xl p-6 transition-all duration-200 cursor-pointer flex flex-col justify-between shadow-xl hover:shadow-indigo-500/10"
+                className="group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-2xl p-5 transition-all duration-200 cursor-pointer flex flex-col justify-between shadow-xl hover:shadow-indigo-500/10"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-4">
+                  {/* Live Animated Preview */}
+                  <div className="mb-4">
+                    <LivePreviewBox name={comp.name} description={comp.description} />
+                  </div>
+
+                  <div className="flex items-center justify-between mb-2">
                     <span className="px-2.5 py-1 rounded-md text-[10px] font-semibold uppercase tracking-wider bg-slate-800 text-slate-300 border border-slate-700">
                       {cat}
                     </span>
                     <span className="text-xs font-mono text-slate-500">{comp.files.length} files</span>
                   </div>
-                  <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors mb-2">
+                  <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors mb-1.5">
                     {comp.name}
                   </h3>
                   <p className="text-sm text-slate-400 line-clamp-2 mb-4 leading-relaxed">
@@ -241,6 +335,14 @@ export default function App() {
 
             {/* Modal Body */}
             <div className="p-6 overflow-y-auto space-y-6 flex-1">
+              {/* Live Preview Box */}
+              <div>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Live Animation Preview</h4>
+                <div className="h-56">
+                  <LivePreviewBox name={selectedComponent[1].name} description={selectedComponent[1].description} />
+                </div>
+              </div>
+
               {/* Description */}
               <div>
                 <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Description</h4>
