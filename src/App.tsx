@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, Suspense, lazy } from 'react';
 import { 
   Search, 
   Terminal, 
@@ -16,6 +16,7 @@ import {
   Play,
   Pause
 } from 'lucide-react';
+import { Player } from '@remotion/player';
 import registryData from '../registry.json';
 
 interface RegistryFile {
@@ -29,6 +30,11 @@ interface ComponentEntry {
   type: string;
   dependencies: string[];
   files: RegistryFile[];
+  width?: number;
+  height?: number;
+  fps?: number;
+  durationInFrames?: number;
+  inputProps?: Record<string, any>;
 }
 
 const CATEGORIES = [
@@ -56,88 +62,107 @@ export function categorizeComponent(path: string, name: string): string {
   return 'ui';
 }
 
-// Live Simulated Preview Box Component
-function LivePreviewBox({ name, description }: { name: string; description: string }) {
-  const [frame, setFrame] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
+// Fallback component for Player preview if dynamic component loading is pending
+const PlaceholderPreview: React.FC<{ name: string; isPlaying: boolean }> = ({ name, isPlaying }) => (
+  <div className="w-full h-full bg-slate-950 flex flex-col items-center justify-center p-4 text-center">
+    <div className="w-12 h-12 rounded-full bg-indigo-600/30 border border-indigo-500/50 flex items-center justify-center mb-3 animate-pulse">
+      {isPlaying ? <Play className="w-5 h-5 text-indigo-400" /> : <Pause className="w-5 h-5 text-indigo-400" />}
+    </div>
+    <span className="text-xs font-bold text-white mb-1">{name}</span>
+    <span className="text-[10px] text-slate-400">Remotion Component Preview</span>
+  </div>
+);
 
-  useEffect(() => {
-    if (!isPlaying) return;
-    const interval = setInterval(() => {
-      setFrame((prev) => (prev + 1) % 120);
-    }, 33); // ~30fps
-    return () => clearInterval(interval);
-  }, [isPlaying]);
+// Component Card with @remotion/player integration
+function ComponentCard({ 
+  id, 
+  comp, 
+  isActivePlayer, 
+  onActivatePlayer 
+}: { 
+  id: string; 
+  comp: ComponentEntry; 
+  isActivePlayer: boolean; 
+  onActivatePlayer: (id: string | null) => void; 
+}) {
+  const primaryFile = comp.files[0]?.path || '';
+  const cat = categorizeComponent(primaryFile, comp.name);
+  const width = comp.width || 1280;
+  const height = comp.height || 720;
+  const fps = comp.fps || 30;
+  const duration = comp.durationInFrames || 120;
+  const aspectClass = width / height < 1 ? 'aspect-[9/16]' : 'aspect-video';
 
-  const progress = (frame % 60) / 60;
-  const isTyping = name.toLowerCase().includes('terminal') || name.toLowerCase().includes('type') || name.toLowerCase().includes('code');
-  const isPhone = name.toLowerCase().includes('phone') || name.toLowerCase().includes('mockup');
-  const isGradient = name.toLowerCase().includes('gradient') || name.toLowerCase().includes('shader') || name.toLowerCase().includes('background');
+  // Dynamic Component Loader or fallback placeholder
+  const ComponentComponent = useMemo(() => {
+    return lazy(async () => {
+      try {
+        // Try to import matching component module
+        const mod = await import(/* @vite-ignore */ `../${primaryFile}`);
+        const exportKey = Object.keys(mod).find(k => typeof mod[k] === 'function');
+        return { default: exportKey ? mod[exportKey] : () => <PlaceholderPreview name={comp.name} isPlaying={isActivePlayer} /> };
+      } catch (e) {
+        return { default: () => <PlaceholderPreview name={comp.name} isPlaying={isActivePlayer} /> };
+      }
+    });
+  }, [primaryFile, comp.name, isActivePlayer]);
 
   return (
-    <div className="relative w-full h-44 bg-slate-950 rounded-xl overflow-hidden border border-slate-800 flex items-center justify-center group/preview">
-      {/* Background Effect */}
-      {isGradient ? (
-        <div 
-          className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-80 blur-lg transition-transform duration-1000"
-          style={{ transform: `scale(${1 + Math.sin(frame * 0.05) * 0.1})` }}
-        />
-      ) : (
-        <div className="absolute inset-0 bg-[radial-gradient(#312e81_1px,transparent_1px)] [background-size:16px_16px] opacity-20" />
-      )}
+    <div 
+      className="group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-2xl p-5 transition-all duration-200 cursor-pointer flex flex-col justify-between shadow-xl hover:shadow-indigo-500/10"
+      onMouseEnter={() => onActivatePlayer(id)}
+      onMouseLeave={() => onActivatePlayer(null)}
+      onClick={() => onActivatePlayer(isActivePlayer ? null : id)}
+    >
+      <div>
+        {/* Remotion Player Preview Box */}
+        <div className={`mb-4 w-full ${aspectClass} bg-slate-950 rounded-xl overflow-hidden border border-slate-800 relative shadow-inner`}>
+          <Suspense fallback={<PlaceholderPreview name={comp.name} isPlaying={isActivePlayer} />}>
+            <Player
+              component={ComponentComponent as any}
+              durationInFrames={duration}
+              fps={fps}
+              compositionWidth={width}
+              compositionHeight={height}
+              style={{ width: '100%', height: '100%' }}
+              controls={false}
+              autoPlay={isActivePlayer}
+              loop
+              initialFrame={isActivePlayer ? 0 : 60}
+            />
+          </Suspense>
+          {!isActivePlayer && (
+            <div className="absolute inset-0 bg-slate-950/30 pointer-events-none flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="px-3 py-1.5 rounded-lg bg-indigo-600/90 text-white text-xs font-semibold shadow-lg backdrop-blur">
+                Hover to Preview
+              </div>
+            </div>
+          )}
+        </div>
 
-      {/* Simulated Content */}
-      <div className="relative z-10 p-4 text-center max-w-xs">
-        {isTyping ? (
-          <div className="bg-slate-900/90 border border-slate-800 rounded-lg p-3 font-mono text-left text-xs text-indigo-300 shadow-xl">
-            <div className="flex items-center space-x-1.5 mb-2 pb-1.5 border-b border-slate-800">
-              <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
-              <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
-              <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
-              <span className="text-[10px] text-slate-500 ml-2">terminal.tsx</span>
-            </div>
-            <p className="text-emerald-400">$ npx remotion render</p>
-            <p className="text-slate-400 mt-1">Compiling {name.toLowerCase()}...</p>
-            <div className="mt-2 w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-              <div className="bg-indigo-500 h-full transition-all duration-75" style={{ width: `${progress * 100}%` }} />
-            </div>
-          </div>
-        ) : isPhone ? (
-          <div className="w-24 h-44 bg-slate-900 border-2 border-slate-700 rounded-2xl mx-auto shadow-2xl flex flex-col p-1.5 transition-transform duration-300 hover:scale-105"
-               style={{ transform: `translateY(${Math.sin(frame * 0.05) * 4}px)` }}>
-            <div className="w-10 h-2 bg-slate-800 rounded-full mx-auto mb-1" />
-            <div className="flex-1 bg-indigo-950/40 rounded-xl flex items-center justify-center p-2 text-[10px] text-indigo-300 font-bold text-center">
-              {name}
-            </div>
-          </div>
-        ) : (
-          <div className="space-y-2">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 animate-pulse">
-              Live Preview
-            </span>
-            <h4 className="text-lg font-bold text-white tracking-tight"
-                style={{
-                  opacity: Math.min(1, progress * 2),
-                  transform: `translateY(${(1 - Math.min(1, progress * 2)) * 15}px)`
-                }}>
-              {name}
-            </h4>
-            <p className="text-xs text-slate-400 line-clamp-1">{description}</p>
-          </div>
-        )}
+        <div className="flex items-center justify-between mb-2">
+          <span className="px-2.5 py-1 rounded-md text-[10px] font-semibold uppercase tracking-wider bg-slate-800 text-slate-300 border border-slate-700">
+            {cat}
+          </span>
+          <span className="text-xs font-mono text-slate-500">{comp.files.length} files</span>
+        </div>
+        <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors mb-1.5">
+          {comp.name}
+        </h3>
+        <p className="text-sm text-slate-400 line-clamp-2 mb-4 leading-relaxed">
+          {comp.description}
+        </p>
       </div>
 
-      {/* Play/Pause control overlay on hover */}
-      <div className="absolute bottom-2 right-2 z-20 opacity-0 group-hover/preview:opacity-100 transition-opacity">
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            setIsPlaying(!isPlaying);
-          }}
-          className="p-1.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-300 border border-slate-700 shadow"
-        >
-          {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
-        </button>
+      <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+        <div className="flex items-center space-x-1.5 text-xs text-slate-500 font-mono">
+          <Package className="w-3.5 h-3.5" />
+          <span>{comp.dependencies.length} deps</span>
+        </div>
+        <span className="text-xs font-semibold text-indigo-400 group-hover:translate-x-1 transition-transform inline-flex items-center space-x-1">
+          <span>View Details</span>
+          <span>→</span>
+        </span>
       </div>
     </div>
   );
@@ -147,6 +172,7 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedComponent, setSelectedComponent] = useState<[string, ComponentEntry] | null>(null);
+  const [activePlayerKey, setActivePlayerKey] = useState<string | null>(null);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
 
   const componentsList = useMemo(() => {
@@ -211,13 +237,13 @@ export default function App() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            <span>Live Client-Side Animations & 1-Click CLI</span>
+            <span>Powered by @remotion/player & React.lazy</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
             Cinematic Motion for <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">Remotion</span>
           </h2>
           <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
-            Explore 250+ production-ready components with live animated previews. Install instantly via CLI.
+            Explore components with live interactive `@remotion/player` previews on hover/tap.
           </p>
 
           {/* Search Bar */}
@@ -260,48 +286,16 @@ export default function App() {
 
         {/* Component Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredComponents.map(([key, comp]) => {
-            const primaryFile = comp.files[0]?.path || '';
-            const cat = categorizeComponent(primaryFile, comp.name);
-            return (
-              <div
-                key={key}
-                onClick={() => setSelectedComponent([key, comp])}
-                className="group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-2xl p-5 transition-all duration-200 cursor-pointer flex flex-col justify-between shadow-xl hover:shadow-indigo-500/10"
-              >
-                <div>
-                  {/* Live Animated Preview */}
-                  <div className="mb-4">
-                    <LivePreviewBox name={comp.name} description={comp.description} />
-                  </div>
-
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="px-2.5 py-1 rounded-md text-[10px] font-semibold uppercase tracking-wider bg-slate-800 text-slate-300 border border-slate-700">
-                      {cat}
-                    </span>
-                    <span className="text-xs font-mono text-slate-500">{comp.files.length} files</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors mb-1.5">
-                    {comp.name}
-                  </h3>
-                  <p className="text-sm text-slate-400 line-clamp-2 mb-4 leading-relaxed">
-                    {comp.description}
-                  </p>
-                </div>
-
-                <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                  <div className="flex items-center space-x-1.5 text-xs text-slate-500 font-mono">
-                    <Package className="w-3.5 h-3.5" />
-                    <span>{comp.dependencies.length} deps</span>
-                  </div>
-                  <span className="text-xs font-semibold text-indigo-400 group-hover:translate-x-1 transition-transform inline-flex items-center space-x-1">
-                    <span>View Details</span>
-                    <span>→</span>
-                  </span>
-                </div>
-              </div>
-            );
-          })}
+          {filteredComponents.map(([key, comp]) => (
+            <div key={key} onClick={() => setSelectedComponent([key, comp])}>
+              <ComponentCard 
+                id={key} 
+                comp={comp} 
+                isActivePlayer={activePlayerKey === key} 
+                onActivatePlayer={(id) => setActivePlayerKey(id)} 
+              />
+            </div>
+          ))}
         </div>
 
         {filteredComponents.length === 0 && (
@@ -335,14 +329,6 @@ export default function App() {
 
             {/* Modal Body */}
             <div className="p-6 overflow-y-auto space-y-6 flex-1">
-              {/* Live Preview Box */}
-              <div>
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Live Animation Preview</h4>
-                <div className="h-56">
-                  <LivePreviewBox name={selectedComponent[1].name} description={selectedComponent[1].description} />
-                </div>
-              </div>
-
               {/* Description */}
               <div>
                 <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Description</h4>
