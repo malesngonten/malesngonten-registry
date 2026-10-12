@@ -2,98 +2,4762 @@
   "$schema": "https://malesngonten.dev/schema/registry.json",
   "name": "malesngonten-registry",
   "components": {
-    "Terminal-Simulator": {
-      "name": "Terminal Simulator",
-      "description": "Cinematic code typing animation component for Remotion with pitch-preserving micro-samples, multi-stage zoom, and rack-focus blur.",
-      "type": "registry:component",
-      "dependencies": [
-        "zod",
-        "remotion",
-        "@remotion/media"
-      ],
-      "files": [
-        {
-          "path": "components/typography/terminal-simulator/TypingDemo.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "components/typography/terminal-simulator/liquid-shader.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "components/typography/terminal-simulator/terminal-simulator.element.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "components/typography/terminal-simulator/SKILL.md",
-          "type": "registry:component"
-        }
-      ],
-      "preview": "https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/typography/terminal-simulator/assets/preview.mp4"
-    },
-    "Animated-Gradient": {
-      "name": "Animated Gradient",
-      "description": "Cinematic WebGL shader animated gradient component for Remotion supporting mist, lava, and vortex variants with frame-driven time synchronization.",
-      "type": "registry:component",
-      "dependencies": [
-        "remotion",
-        "zod"
-      ],
-      "files": [
-        {
-          "path": "components/backgrounds/animated-gradient/animated-gradient.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "components/backgrounds/animated-gradient/animated-gradient.element.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "components/backgrounds/animated-gradient/SKILL.md",
-          "type": "registry:component"
-        }
-      ]
-    },
-    "Phone-Mockup": {
-      "name": "Phone Mockup",
-      "description": "3D Phone Mockup component for Remotion with GLTF model loading, screen synchronization, and responsive pose controls.",
-      "type": "registry:component",
-      "dependencies": [
-        "remotion",
-        "@remotion/three",
-        "three",
-        "@react-three/fiber",
-        "zod"
-      ],
-      "files": [
-        {
-          "path": "components/mockups/phonemockup/phonemockup.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "components/mockups/phonemockup/phonemockup.element.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "components/mockups/phonemockup/SKILL.md",
-          "type": "registry:component"
-        }
-      ]
-    },
-    "Soft-Blur-In": {
-      "name": "Soft Blur In",
-      "description": "Per-character / title fade-in with a gentle blur and upward motion. Apple's signature hero-title reveal.",
+    "A1 Product Demo": {
+      "name": "A1 Product Demo",
+      "description": "Production-ready Remotion component: a1-product-demo",
       "type": "registry:component",
       "dependencies": [
         "remotion"
       ],
       "files": [
         {
-          "path": "components/typography/soft-blur-in/index.tsx",
+          "path": "components/ui/a1-product-demo/config.ts",
           "type": "registry:component"
         },
         {
-          "path": "components/typography/soft-blur-in/soft-blur-in.element.tsx",
+          "path": "components/ui/a1-product-demo/duration.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/example.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/feature-frame.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/flowith-demo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/foundation.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/product-hero.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/ui-snapshot-card.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/__tests__/a1-product-demo.test.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/ai-planning.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/features-swap.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/focus-analytics.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/icon-cloud.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/integrations.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/logo-outro.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/metrics-cards.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/positioning.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/problem-hook.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/social-proof.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/task-mgmt.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/a1-product-demo/acts/workflow-auto.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Agent Run": {
+      "name": "Agent Run",
+      "description": "Production-ready Remotion component: agent-run",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/agent-run/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/agent-run/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/agent-run/__tests__/agent-run.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Animated Bar Chart": {
+      "name": "Animated Bar Chart",
+      "description": "Production-ready Remotion component: animated-bar-chart",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/animated-bar-chart/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/animated-bar-chart/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Animated Line Chart": {
+      "name": "Animated Line Chart",
+      "description": "Production-ready Remotion component: animated-line-chart",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/animated-line-chart/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/animated-line-chart/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Ascii Dissolve": {
+      "name": "Ascii Dissolve",
+      "description": "Production-ready Remotion component: ascii-dissolve",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/ascii-dissolve/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/ascii-dissolve/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Ascii Render": {
+      "name": "Ascii Render",
+      "description": "Production-ready Remotion component: ascii-render",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/ascii-render/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/ascii-render/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Backdrop": {
+      "name": "Backdrop",
+      "description": "Production-ready Remotion component: backdrop",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/backdrop/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/backdrop/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Bauhaus Build": {
+      "name": "Bauhaus Build",
+      "description": "Production-ready Remotion component: bauhaus-build",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/bauhaus-build/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/bauhaus-build/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/bauhaus-build/__tests__/bauhaus-build.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Blur Out Up": {
+      "name": "Blur Out Up",
+      "description": "Production-ready Remotion component: blur-out-up",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/blur-out-up/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/blur-out-up/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Bottom Up Letters": {
+      "name": "Bottom Up Letters",
+      "description": "Production-ready Remotion component: bottom-up-letters",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/bottom-up-letters/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/bottom-up-letters/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Brush": {
+      "name": "Brush",
+      "description": "Production-ready Remotion component: brush",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/brush/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/brush/__tests__/brush.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Camera Lens": {
+      "name": "Camera Lens",
+      "description": "Production-ready Remotion component: camera-lens",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/camera-lens/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/camera-lens/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Canvas Presentation": {
+      "name": "Canvas Presentation",
+      "description": "Production-ready Remotion component: canvas-presentation",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/canvas-presentation/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Active Pop": {
+      "name": "Caption Active Pop",
+      "description": "Production-ready Remotion component: caption-active-pop",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-active-pop/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-active-pop/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Blur In": {
+      "name": "Caption Blur In",
+      "description": "Production-ready Remotion component: caption-blur-in",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-blur-in/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-blur-in/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Bounce In": {
+      "name": "Caption Bounce In",
+      "description": "Production-ready Remotion component: caption-bounce-in",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-bounce-in/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-bounce-in/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Core": {
+      "name": "Caption Core",
+      "description": "Production-ready Remotion component: caption-core",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-core/index.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-core/__tests__/caption-core.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Cube": {
+      "name": "Caption Cube",
+      "description": "Production-ready Remotion component: caption-cube",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-cube/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-cube/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Dim Progress": {
+      "name": "Caption Dim Progress",
+      "description": "Production-ready Remotion component: caption-dim-progress",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-dim-progress/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-dim-progress/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Drop": {
+      "name": "Caption Drop",
+      "description": "Production-ready Remotion component: caption-drop",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-drop/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-drop/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Emoji": {
+      "name": "Caption Emoji",
+      "description": "Production-ready Remotion component: caption-emoji",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-emoji/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-emoji/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Handwrite": {
+      "name": "Caption Handwrite",
+      "description": "Production-ready Remotion component: caption-handwrite",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-handwrite/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-handwrite/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Highlight Box": {
+      "name": "Caption Highlight Box",
+      "description": "Production-ready Remotion component: caption-highlight-box",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-highlight-box/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-highlight-box/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Karaoke": {
+      "name": "Caption Karaoke",
+      "description": "Production-ready Remotion component: caption-karaoke",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-karaoke/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-karaoke/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Knockout": {
+      "name": "Caption Knockout",
+      "description": "Production-ready Remotion component: caption-knockout",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-knockout/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-knockout/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Label Maker": {
+      "name": "Caption Label Maker",
+      "description": "Production-ready Remotion component: caption-label-maker",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-label-maker/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-label-maker/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Marker": {
+      "name": "Caption Marker",
+      "description": "Production-ready Remotion component: caption-marker",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-marker/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-marker/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Outline": {
+      "name": "Caption Outline",
+      "description": "Production-ready Remotion component: caption-outline",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-outline/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-outline/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Prosody": {
+      "name": "Caption Prosody",
+      "description": "Production-ready Remotion component: caption-prosody",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-prosody/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-prosody/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Redact": {
+      "name": "Caption Redact",
+      "description": "Production-ready Remotion component: caption-redact",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-redact/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-redact/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Rise": {
+      "name": "Caption Rise",
+      "description": "Production-ready Remotion component: caption-rise",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-rise/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-rise/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Scramble": {
+      "name": "Caption Scramble",
+      "description": "Production-ready Remotion component: caption-scramble",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-scramble/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-scramble/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Slice": {
+      "name": "Caption Slice",
+      "description": "Production-ready Remotion component: caption-slice",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-slice/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-slice/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Slot": {
+      "name": "Caption Slot",
+      "description": "Production-ready Remotion component: caption-slot",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-slot/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-slot/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Speaker": {
+      "name": "Caption Speaker",
+      "description": "Production-ready Remotion component: caption-speaker",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-speaker/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-speaker/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Split Flap": {
+      "name": "Caption Split Flap",
+      "description": "Production-ready Remotion component: caption-split-flap",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-split-flap/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-split-flap/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Stack": {
+      "name": "Caption Stack",
+      "description": "Production-ready Remotion component: caption-stack",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-stack/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-stack/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Stamp": {
+      "name": "Caption Stamp",
+      "description": "Production-ready Remotion component: caption-stamp",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-stamp/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-stamp/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Subtitle": {
+      "name": "Caption Subtitle",
+      "description": "Production-ready Remotion component: caption-subtitle",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-subtitle/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-subtitle/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Teleprompter": {
+      "name": "Caption Teleprompter",
+      "description": "Production-ready Remotion component: caption-teleprompter",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-teleprompter/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-teleprompter/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Timeline": {
+      "name": "Caption Timeline",
+      "description": "Production-ready Remotion component: caption-timeline",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-timeline/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-timeline/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Typewriter": {
+      "name": "Caption Typewriter",
+      "description": "Production-ready Remotion component: caption-typewriter",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-typewriter/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-typewriter/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Underline": {
+      "name": "Caption Underline",
+      "description": "Production-ready Remotion component: caption-underline",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-underline/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-underline/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Weight": {
+      "name": "Caption Weight",
+      "description": "Production-ready Remotion component: caption-weight",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-weight/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-weight/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caption Word Pop": {
+      "name": "Caption Word Pop",
+      "description": "Production-ready Remotion component: caption-word-pop",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/caption-word-pop/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/caption-word-pop/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caret Swap": {
+      "name": "Caret Swap",
+      "description": "Production-ready Remotion component: caret-swap",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/caret-swap/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/caret-swap/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Caret Wipe": {
+      "name": "Caret Wipe",
+      "description": "Production-ready Remotion component: caret-wipe",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/caret-wipe/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/caret-wipe/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Centered Word Build": {
+      "name": "Centered Word Build",
+      "description": "Production-ready Remotion component: centered-word-build",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/centered-word-build/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/centered-word-build/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Chat Gpt": {
+      "name": "Chat Gpt",
+      "description": "Production-ready Remotion component: chat-gpt",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/chat-gpt/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/chat-gpt/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/chat-gpt/__tests__/chat-gpt.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Chat To Preview Layout": {
+      "name": "Chat To Preview Layout",
+      "description": "Production-ready Remotion component: chat-to-preview-layout",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/chat-to-preview-layout/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/chat-to-preview-layout/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Check List": {
+      "name": "Check List",
+      "description": "Production-ready Remotion component: check-list",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/check-list/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/check-list/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/check-list/__tests__/check-list.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Chromatic Wave": {
+      "name": "Chromatic Wave",
+      "description": "Production-ready Remotion component: chromatic-wave",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/chromatic-wave/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/chromatic-wave/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Claude Chat": {
+      "name": "Claude Chat",
+      "description": "Production-ready Remotion component: claude-chat",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/claude-chat/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/claude-chat/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/claude-chat/__tests__/claude-chat.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Claude Code": {
+      "name": "Claude Code",
+      "description": "Production-ready Remotion component: claude-code",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/claude-code/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/claude-code/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/claude-code/__tests__/claude-code.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Code Morph": {
+      "name": "Code Morph",
+      "description": "Production-ready Remotion component: code-morph",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/code-morph/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/code-morph/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/code-morph/__tests__/code-morph.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Confetti": {
+      "name": "Confetti",
+      "description": "Production-ready Remotion component: confetti",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/confetti/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/confetti/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/confetti/__tests__/confetti.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Crt Screen": {
+      "name": "Crt Screen",
+      "description": "Production-ready Remotion component: crt-screen",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/crt-screen/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/crt-screen/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Crumple Toss": {
+      "name": "Crumple Toss",
+      "description": "Production-ready Remotion component: crumple-toss",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/crumple-toss/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/crumple-toss/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/crumple-toss/__tests__/crumple-toss.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Cursor Gravity": {
+      "name": "Cursor Gravity",
+      "description": "Production-ready Remotion component: cursor-gravity",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/cursor-gravity/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/cursor-gravity/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/cursor-gravity/__tests__/cursor-gravity.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Displacement": {
+      "name": "Displacement",
+      "description": "Production-ready Remotion component: displacement",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/displacement/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/displacement/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Dither Dissolve": {
+      "name": "Dither Dissolve",
+      "description": "Production-ready Remotion component: dither-dissolve",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/dither-dissolve/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/dither-dissolve/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Drift": {
+      "name": "Drift",
+      "description": "Production-ready Remotion component: drift",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/drift/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/drift/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Echo Stack": {
+      "name": "Echo Stack",
+      "description": "Production-ready Remotion component: echo-stack",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/echo-stack/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/echo-stack/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/echo-stack/__tests__/echo-stack.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Ecosystem Constellation": {
+      "name": "Ecosystem Constellation",
+      "description": "Production-ready Remotion component: ecosystem-constellation",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/ecosystem-constellation/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/ecosystem-constellation/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Ember Burn": {
+      "name": "Ember Burn",
+      "description": "Production-ready Remotion component: ember-burn",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/ember-burn/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/ember-burn/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Extrude Pop": {
+      "name": "Extrude Pop",
+      "description": "Production-ready Remotion component: extrude-pop",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/extrude-pop/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/extrude-pop/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Fade Through": {
+      "name": "Fade Through",
+      "description": "Production-ready Remotion component: fade-through",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/fade-through/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/fade-through/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Focus Blur Resolve": {
+      "name": "Focus Blur Resolve",
+      "description": "Production-ready Remotion component: focus-blur-resolve",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/focus-blur-resolve/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/focus-blur-resolve/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Focus Pull": {
+      "name": "Focus Pull",
+      "description": "Production-ready Remotion component: focus-pull",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/focus-pull/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/focus-pull/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Fog Rise": {
+      "name": "Fog Rise",
+      "description": "Production-ready Remotion component: fog-rise",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/fog-rise/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/fog-rise/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Github Sponsors": {
+      "name": "Github Sponsors",
+      "description": "Production-ready Remotion component: github-sponsors",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/github-sponsors/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/github-sponsors/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/github-sponsors/__tests__/github-sponsors.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Github Stars": {
+      "name": "Github Stars",
+      "description": "Production-ready Remotion component: github-stars",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/github-stars/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/github-stars/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/github-stars/__tests__/github-stars.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Glass Code Block": {
+      "name": "Glass Code Block",
+      "description": "Production-ready Remotion component: glass-code-block",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/glass-code-block/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/glass-code-block/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Glass Code Walk": {
+      "name": "Glass Code Walk",
+      "description": "Production-ready Remotion component: glass-code-walk",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/glass-code-walk/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/glass-code-walk/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Glitch Cut": {
+      "name": "Glitch Cut",
+      "description": "Production-ready Remotion component: glitch-cut",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/glitch-cut/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/glitch-cut/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Glyph Anatomy": {
+      "name": "Glyph Anatomy",
+      "description": "Production-ready Remotion component: glyph-anatomy",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/glyph-anatomy/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/glyph-anatomy/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/glyph-anatomy/__tests__/glyph-anatomy.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Gooey Morph": {
+      "name": "Gooey Morph",
+      "description": "Production-ready Remotion component: gooey-morph",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/gooey-morph/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/gooey-morph/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Gradient Scale Cut Text": {
+      "name": "Gradient Scale Cut Text",
+      "description": "Production-ready Remotion component: gradient-scale-cut-text",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/gradient-scale-cut-text/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/gradient-scale-cut-text/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Grain Dissolve": {
+      "name": "Grain Dissolve",
+      "description": "Production-ready Remotion component: grain-dissolve",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/grain-dissolve/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/grain-dissolve/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Grid Wave": {
+      "name": "Grid Wave",
+      "description": "Production-ready Remotion component: grid-wave",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/grid-wave/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/grid-wave/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Halftone Print": {
+      "name": "Halftone Print",
+      "description": "Production-ready Remotion component: halftone-print",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/halftone-print/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/halftone-print/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Hand Count": {
+      "name": "Hand Count",
+      "description": "Production-ready Remotion component: hand-count",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/hand-count/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/hand-count/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/hand-count/__tests__/hand-count.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Handwrite": {
+      "name": "Handwrite",
+      "description": "Production-ready Remotion component: handwrite",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/handwrite/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/handwrite/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/handwrite/__tests__/handwrite.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Hologram": {
+      "name": "Hologram",
+      "description": "Production-ready Remotion component: hologram",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/hologram/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/hologram/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Icon Scatter": {
+      "name": "Icon Scatter",
+      "description": "Production-ready Remotion component: icon-scatter",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/icon-scatter/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/icon-scatter/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Infinite Bento Pan": {
+      "name": "Infinite Bento Pan",
+      "description": "Production-ready Remotion component: infinite-bento-pan",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/infinite-bento-pan/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/infinite-bento-pan/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Infinite Marquee": {
+      "name": "Infinite Marquee",
+      "description": "Production-ready Remotion component: infinite-marquee",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/infinite-marquee/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/infinite-marquee/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Ink Arrow": {
+      "name": "Ink Arrow",
+      "description": "Production-ready Remotion component: ink-arrow",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/ink-arrow/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/ink-arrow/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/ink-arrow/__tests__/ink-arrow.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Ink Underline": {
+      "name": "Ink Underline",
+      "description": "Production-ready Remotion component: ink-underline",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/ink-underline/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/ink-underline/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Inline Highlight": {
+      "name": "Inline Highlight",
+      "description": "Production-ready Remotion component: inline-highlight",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/inline-highlight/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/inline-highlight/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Inline Pill Takeover": {
+      "name": "Inline Pill Takeover",
+      "description": "Production-ready Remotion component: inline-pill-takeover",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/inline-pill-takeover/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/inline-pill-takeover/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Inline Word Roll": {
+      "name": "Inline Word Roll",
+      "description": "Production-ready Remotion component: inline-word-roll",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/inline-word-roll/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/inline-word-roll/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/inline-word-roll/__tests__/inline-word-roll.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Keystroke": {
+      "name": "Keystroke",
+      "description": "Production-ready Remotion component: keystroke",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/keystroke/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/keystroke/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/keystroke/__tests__/keystroke.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Kinetic Center Build": {
+      "name": "Kinetic Center Build",
+      "description": "Production-ready Remotion component: kinetic-center-build",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/kinetic-center-build/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/kinetic-center-build/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Kinetic Morph Text": {
+      "name": "Kinetic Morph Text",
+      "description": "Production-ready Remotion component: kinetic-morph-text",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/kinetic-morph-text/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/kinetic-morph-text/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/kinetic-morph-text/__tests__/kinetic-morph-text.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Kinetic Warp": {
+      "name": "Kinetic Warp",
+      "description": "Production-ready Remotion component: kinetic-warp",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/kinetic-warp/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/kinetic-warp/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Lens Zoom": {
+      "name": "Lens Zoom",
+      "description": "Production-ready Remotion component: lens-zoom",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/lens-zoom/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/lens-zoom/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Line By Line Slide": {
+      "name": "Line By Line Slide",
+      "description": "Production-ready Remotion component: line-by-line-slide",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/line-by-line-slide/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/line-by-line-slide/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Live Code Compilation": {
+      "name": "Live Code Compilation",
+      "description": "Production-ready Remotion component: live-code-compilation",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/live-code-compilation/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/live-code-compilation/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Logo Enter": {
+      "name": "Logo Enter",
+      "description": "Production-ready Remotion component: logo-enter",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/logo-enter/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/logo-enter/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Marker Highlight": {
+      "name": "Marker Highlight",
+      "description": "Production-ready Remotion component: marker-highlight",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/marker-highlight/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/marker-highlight/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Mask Reveal Up": {
+      "name": "Mask Reveal Up",
+      "description": "Production-ready Remotion component: mask-reveal-up",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/mask-reveal-up/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/mask-reveal-up/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Matrix Decode": {
+      "name": "Matrix Decode",
+      "description": "Production-ready Remotion component: matrix-decode",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/matrix-decode/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/matrix-decode/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Micro Scale Fade": {
+      "name": "Micro Scale Fade",
+      "description": "Production-ready Remotion component: micro-scale-fade",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/micro-scale-fade/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/micro-scale-fade/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Mondrian Split": {
+      "name": "Mondrian Split",
+      "description": "Production-ready Remotion component: mondrian-split",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/mondrian-split/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/mondrian-split/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/mondrian-split/__tests__/mondrian-split.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Number Wheel": {
+      "name": "Number Wheel",
+      "description": "Production-ready Remotion component: number-wheel",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/number-wheel/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/number-wheel/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Opencode": {
+      "name": "Opencode",
+      "description": "Production-ready Remotion component: opencode",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/opencode/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/opencode/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/opencode/__tests__/opencode.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Outline Fill Track Text": {
+      "name": "Outline Fill Track Text",
+      "description": "Production-ready Remotion component: outline-fill-track-text",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/outline-fill-track-text/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/outline-fill-track-text/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Outline Trace": {
+      "name": "Outline Trace",
+      "description": "Production-ready Remotion component: outline-trace",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/outline-trace/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/outline-trace/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/outline-trace/__tests__/outline-trace.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Page Turn": {
+      "name": "Page Turn",
+      "description": "Production-ready Remotion component: page-turn",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/page-turn/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/page-turn/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/page-turn/__tests__/page-turn.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Paper Sticker": {
+      "name": "Paper Sticker",
+      "description": "Production-ready Remotion component: paper-sticker",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/paper-sticker/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/paper-sticker/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Paper Wobble": {
+      "name": "Paper Wobble",
+      "description": "Production-ready Remotion component: paper-wobble",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/paper-wobble/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/paper-wobble/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Particle Dissolve": {
+      "name": "Particle Dissolve",
+      "description": "Production-ready Remotion component: particle-dissolve",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/particle-dissolve/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/particle-dissolve/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Path Ride": {
+      "name": "Path Ride",
+      "description": "Production-ready Remotion component: path-ride",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/path-ride/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/path-ride/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/path-ride/__tests__/path-ride.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Per Character Rise": {
+      "name": "Per Character Rise",
+      "description": "Production-ready Remotion component: per-character-rise",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/per-character-rise/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/per-character-rise/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Per Word Crossfade": {
+      "name": "Per Word Crossfade",
+      "description": "Production-ready Remotion component: per-word-crossfade",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/per-word-crossfade/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/per-word-crossfade/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Period Drop": {
+      "name": "Period Drop",
+      "description": "Production-ready Remotion component: period-drop",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/period-drop/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/period-drop/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/period-drop/__tests__/period-drop.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Perlin Dissolve": {
+      "name": "Perlin Dissolve",
+      "description": "Production-ready Remotion component: perlin-dissolve",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/perlin-dissolve/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/perlin-dissolve/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Perspective Marquee": {
+      "name": "Perspective Marquee",
+      "description": "Production-ready Remotion component: perspective-marquee",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/perspective-marquee/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/perspective-marquee/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Perspective Squeeze": {
+      "name": "Perspective Squeeze",
+      "description": "Production-ready Remotion component: perspective-squeeze",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/perspective-squeeze/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/perspective-squeeze/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Pixelate Region": {
+      "name": "Pixelate Region",
+      "description": "Production-ready Remotion component: pixelate-region",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/pixelate-region/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/pixelate-region/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Polaroid": {
+      "name": "Polaroid",
+      "description": "Production-ready Remotion component: polaroid",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/polaroid/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/polaroid/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/polaroid/__tests__/polaroid.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Push Through": {
+      "name": "Push Through",
+      "description": "Production-ready Remotion component: push-through",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/push-through/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/push-through/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Radial Burst": {
+      "name": "Radial Burst",
+      "description": "Production-ready Remotion component: radial-burst",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/radial-burst/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/radial-burst/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/radial-burst/__tests__/radial-burst.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Reel": {
+      "name": "Reel",
+      "description": "Production-ready Remotion component: reel",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/reel/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/reel/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Rgb Glitch Text": {
+      "name": "Rgb Glitch Text",
+      "description": "Production-ready Remotion component: rgb-glitch-text",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/rgb-glitch-text/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/rgb-glitch-text/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Ring Text": {
+      "name": "Ring Text",
+      "description": "Production-ready Remotion component: ring-text",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/ring-text/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/ring-text/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/ring-text/__tests__/ring-text.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Ripple Zoom": {
+      "name": "Ripple Zoom",
+      "description": "Production-ready Remotion component: ripple-zoom",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/ripple-zoom/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/ripple-zoom/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Rolling Number": {
+      "name": "Rolling Number",
+      "description": "Production-ready Remotion component: rolling-number",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/rolling-number/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/rolling-number/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Rolodex Flip": {
+      "name": "Rolodex Flip",
+      "description": "Production-ready Remotion component: rolodex-flip",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/rolodex-flip/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/rolodex-flip/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Rush Type": {
+      "name": "Rush Type",
+      "description": "Production-ready Remotion component: rush-type",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/rush-type/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/rush-type/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/rush-type/__tests__/rush-type.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Scale Down Fade": {
+      "name": "Scale Down Fade",
+      "description": "Production-ready Remotion component: scale-down-fade",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/scale-down-fade/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/scale-down-fade/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Scene Motion": {
+      "name": "Scene Motion",
+      "description": "Production-ready Remotion component: scene-motion",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/scene-motion/index.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Scribble Circle": {
+      "name": "Scribble Circle",
+      "description": "Production-ready Remotion component: scribble-circle",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/scribble-circle/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/scribble-circle/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/scribble-circle/__tests__/scribble-circle.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Search Reveal": {
+      "name": "Search Reveal",
+      "description": "Production-ready Remotion component: search-reveal",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/search-reveal/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/search-reveal/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/search-reveal/__tests__/search-reveal.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Security Cam": {
+      "name": "Security Cam",
+      "description": "Production-ready Remotion component: security-cam",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/security-cam/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/security-cam/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Selection Snap": {
+      "name": "Selection Snap",
+      "description": "Production-ready Remotion component: selection-snap",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/selection-snap/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/selection-snap/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/selection-snap/__tests__/selection-snap.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Caustics": {
+      "name": "Shader Caustics",
+      "description": "Production-ready Remotion component: shader-caustics",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-caustics/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-caustics/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Color Panels": {
+      "name": "Shader Color Panels",
+      "description": "Production-ready Remotion component: shader-color-panels",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-color-panels/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-color-panels/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Dithering": {
+      "name": "Shader Dithering",
+      "description": "Production-ready Remotion component: shader-dithering",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-dithering/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-dithering/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Dot Orbit": {
+      "name": "Shader Dot Orbit",
+      "description": "Production-ready Remotion component: shader-dot-orbit",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-dot-orbit/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-dot-orbit/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Gem Smoke": {
+      "name": "Shader Gem Smoke",
+      "description": "Production-ready Remotion component: shader-gem-smoke",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-gem-smoke/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-gem-smoke/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader God Rays": {
+      "name": "Shader God Rays",
+      "description": "Production-ready Remotion component: shader-god-rays",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-god-rays/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-god-rays/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Grain Gradient Arcade": {
+      "name": "Shader Grain Gradient Arcade",
+      "description": "Production-ready Remotion component: shader-grain-gradient-arcade",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-grain-gradient-arcade/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-grain-gradient-arcade/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Grain Gradient Blush": {
+      "name": "Shader Grain Gradient Blush",
+      "description": "Production-ready Remotion component: shader-grain-gradient-blush",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-grain-gradient-blush/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-grain-gradient-blush/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Grain Gradient Dune": {
+      "name": "Shader Grain Gradient Dune",
+      "description": "Production-ready Remotion component: shader-grain-gradient-dune",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-grain-gradient-dune/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-grain-gradient-dune/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Grain Gradient Horizon": {
+      "name": "Shader Grain Gradient Horizon",
+      "description": "Production-ready Remotion component: shader-grain-gradient-horizon",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-grain-gradient-horizon/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-grain-gradient-horizon/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Grain Gradient Nebula": {
+      "name": "Shader Grain Gradient Nebula",
+      "description": "Production-ready Remotion component: shader-grain-gradient-nebula",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-grain-gradient-nebula/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-grain-gradient-nebula/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Grain Gradient Orb": {
+      "name": "Shader Grain Gradient Orb",
+      "description": "Production-ready Remotion component: shader-grain-gradient-orb",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-grain-gradient-orb/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-grain-gradient-orb/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Grain Gradient Sunrise": {
+      "name": "Shader Grain Gradient Sunrise",
+      "description": "Production-ready Remotion component: shader-grain-gradient-sunrise",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-grain-gradient-sunrise/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-grain-gradient-sunrise/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Grain Gradient Tide": {
+      "name": "Shader Grain Gradient Tide",
+      "description": "Production-ready Remotion component: shader-grain-gradient-tide",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-grain-gradient-tide/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-grain-gradient-tide/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Grain Gradient Ultraviolet": {
+      "name": "Shader Grain Gradient Ultraviolet",
+      "description": "Production-ready Remotion component: shader-grain-gradient-ultraviolet",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-grain-gradient-ultraviolet/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-grain-gradient-ultraviolet/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Grain Gradient": {
+      "name": "Shader Grain Gradient",
+      "description": "Production-ready Remotion component: shader-grain-gradient",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-grain-gradient/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-grain-gradient/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Light Tunnel": {
+      "name": "Shader Light Tunnel",
+      "description": "Production-ready Remotion component: shader-light-tunnel",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-light-tunnel/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-light-tunnel/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Liquid Metal": {
+      "name": "Shader Liquid Metal",
+      "description": "Production-ready Remotion component: shader-liquid-metal",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-liquid-metal/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-liquid-metal/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Mesh Gradient Aurora": {
+      "name": "Shader Mesh Gradient Aurora",
+      "description": "Production-ready Remotion component: shader-mesh-gradient-aurora",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-aurora/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-aurora/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Mesh Gradient Dusk": {
+      "name": "Shader Mesh Gradient Dusk",
+      "description": "Production-ready Remotion component: shader-mesh-gradient-dusk",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-dusk/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-dusk/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Mesh Gradient Ember": {
+      "name": "Shader Mesh Gradient Ember",
+      "description": "Production-ready Remotion component: shader-mesh-gradient-ember",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-ember/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-ember/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Mesh Gradient Ink": {
+      "name": "Shader Mesh Gradient Ink",
+      "description": "Production-ready Remotion component: shader-mesh-gradient-ink",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-ink/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-ink/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Mesh Gradient Lagoon": {
+      "name": "Shader Mesh Gradient Lagoon",
+      "description": "Production-ready Remotion component: shader-mesh-gradient-lagoon",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-lagoon/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-lagoon/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Mesh Gradient Lavender": {
+      "name": "Shader Mesh Gradient Lavender",
+      "description": "Production-ready Remotion component: shader-mesh-gradient-lavender",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-lavender/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-lavender/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Mesh Gradient Synthwave": {
+      "name": "Shader Mesh Gradient Synthwave",
+      "description": "Production-ready Remotion component: shader-mesh-gradient-synthwave",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-synthwave/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-synthwave/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Metaballs": {
+      "name": "Shader Metaballs",
+      "description": "Production-ready Remotion component: shader-metaballs",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-metaballs/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-metaballs/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Pulsing Border": {
+      "name": "Shader Pulsing Border",
+      "description": "Production-ready Remotion component: shader-pulsing-border",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-pulsing-border/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-pulsing-border/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Simplex Noise": {
+      "name": "Shader Simplex Noise",
+      "description": "Production-ready Remotion component: shader-simplex-noise",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-simplex-noise/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-simplex-noise/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Spiral Pass": {
+      "name": "Shader Spiral Pass",
+      "description": "Production-ready Remotion component: shader-spiral-pass",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-spiral-pass/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-spiral-pass/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-spiral-pass/__tests__/phase.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Spiral": {
+      "name": "Shader Spiral",
+      "description": "Production-ready Remotion component: shader-spiral",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-spiral/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-spiral/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Swirl Candy": {
+      "name": "Shader Swirl Candy",
+      "description": "Production-ready Remotion component: shader-swirl-candy",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-swirl-candy/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-swirl-candy/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Swirl Citrus": {
+      "name": "Shader Swirl Citrus",
+      "description": "Production-ready Remotion component: shader-swirl-citrus",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-swirl-citrus/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-swirl-citrus/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Swirl Lilac": {
+      "name": "Shader Swirl Lilac",
+      "description": "Production-ready Remotion component: shader-swirl-lilac",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-swirl-lilac/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-swirl-lilac/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Swirl Retro": {
+      "name": "Shader Swirl Retro",
+      "description": "Production-ready Remotion component: shader-swirl-retro",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-swirl-retro/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-swirl-retro/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Swirl Sunburst": {
+      "name": "Shader Swirl Sunburst",
+      "description": "Production-ready Remotion component: shader-swirl-sunburst",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-swirl-sunburst/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-swirl-sunburst/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Swirl Tide": {
+      "name": "Shader Swirl Tide",
+      "description": "Production-ready Remotion component: shader-swirl-tide",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-swirl-tide/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-swirl-tide/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Warp Acid": {
+      "name": "Shader Warp Acid",
+      "description": "Production-ready Remotion component: shader-warp-acid",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-warp-acid/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-warp-acid/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Warp Rose Gold": {
+      "name": "Shader Warp Rose Gold",
+      "description": "Production-ready Remotion component: shader-warp-rose-gold",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-warp-rose-gold/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-warp-rose-gold/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Weave": {
+      "name": "Shader Weave",
+      "description": "Production-ready Remotion component: shader-weave",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-weave/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-weave/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shadow Sweep Text": {
+      "name": "Shadow Sweep Text",
+      "description": "Production-ready Remotion component: shadow-sweep-text",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/shadow-sweep-text/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/shadow-sweep-text/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Simulated Cursor": {
+      "name": "Simulated Cursor",
+      "description": "Production-ready Remotion component: simulated-cursor",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/simulated-cursor/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/simulated-cursor/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Slide Swap": {
+      "name": "Slide Swap",
+      "description": "Production-ready Remotion component: slide-swap",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/slide-swap/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/slide-swap/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Smoke Dissolve": {
+      "name": "Smoke Dissolve",
+      "description": "Production-ready Remotion component: smoke-dissolve",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/smoke-dissolve/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/smoke-dissolve/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Speed Lines": {
+      "name": "Speed Lines",
+      "description": "Production-ready Remotion component: speed-lines",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/speed-lines/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/speed-lines/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/speed-lines/__tests__/speed-lines.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Spring Scale In": {
+      "name": "Spring Scale In",
+      "description": "Production-ready Remotion component: spring-scale-in",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/spring-scale-in/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/spring-scale-in/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Squeeze In": {
+      "name": "Squeeze In",
+      "description": "Production-ready Remotion component: squeeze-in",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/squeeze-in/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/squeeze-in/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Stop Motion": {
+      "name": "Stop Motion",
+      "description": "Production-ready Remotion component: stop-motion",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/stop-motion/index.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/stop-motion/__tests__/stop-motion.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Strikethrough Replace": {
+      "name": "Strikethrough Replace",
+      "description": "Production-ready Remotion component: strikethrough-replace",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/strikethrough-replace/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/strikethrough-replace/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Stripe Type": {
+      "name": "Stripe Type",
+      "description": "Production-ready Remotion component: stripe-type",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/stripe-type/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/stripe-type/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/stripe-type/__tests__/stripe-type.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Sustained Glitch": {
+      "name": "Sustained Glitch",
+      "description": "Production-ready Remotion component: sustained-glitch",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/sustained-glitch/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/sustained-glitch/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Top Down Letters": {
+      "name": "Top Down Letters",
+      "description": "Production-ready Remotion component: top-down-letters",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/top-down-letters/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/top-down-letters/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Tracking In": {
+      "name": "Tracking In",
+      "description": "Production-ready Remotion component: tracking-in",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/tracking-in/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/tracking-in/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Truchet Flip": {
+      "name": "Truchet Flip",
+      "description": "Production-ready Remotion component: truchet-flip",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/truchet-flip/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/truchet-flip/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/truchet-flip/__tests__/truchet-flip.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Type Repeater": {
+      "name": "Type Repeater",
+      "description": "Production-ready Remotion component: type-repeater",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/type-repeater/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/type-repeater/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/type-repeater/__tests__/type-repeater.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Type Wall": {
+      "name": "Type Wall",
+      "description": "Production-ready Remotion component: type-wall",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/type-wall/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/type-wall/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/type-wall/__tests__/type-wall.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Typed Split Wipe": {
+      "name": "Typed Split Wipe",
+      "description": "Production-ready Remotion component: typed-split-wipe",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/typed-split-wipe/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/typed-split-wipe/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/typed-split-wipe/__tests__/typed-split-wipe.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Typewriter": {
+      "name": "Typewriter",
+      "description": "Production-ready Remotion component: typewriter",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/typewriter/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/typewriter/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Vhs Filter": {
+      "name": "Vhs Filter",
+      "description": "Production-ready Remotion component: vhs-filter",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/vhs-filter/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/vhs-filter/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Warp Dissolve": {
+      "name": "Warp Dissolve",
+      "description": "Production-ready Remotion component: warp-dissolve",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/warp-dissolve/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/warp-dissolve/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Wave Wipe": {
+      "name": "Wave Wipe",
+      "description": "Production-ready Remotion component: wave-wipe",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/wave-wipe/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/wave-wipe/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Whip Pan": {
+      "name": "Whip Pan",
+      "description": "Production-ready Remotion component: whip-pan",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/whip-pan/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/whip-pan/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Word Push": {
+      "name": "Word Push",
+      "description": "Production-ready Remotion component: word-push",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/word-push/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/word-push/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "X Follow Card": {
+      "name": "X Follow Card",
+      "description": "Production-ready Remotion component: x-follow-card",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/x-follow-card/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/x-follow-card/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "X Followers Overview": {
+      "name": "X Followers Overview",
+      "description": "Production-ready Remotion component: x-followers-overview",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/x-followers-overview/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/x-followers-overview/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/x-followers-overview/__tests__/x-followers-overview.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Mesh Gradient Mint": {
+      "name": "Shader Mesh Gradient Mint",
+      "description": "Production-ready Remotion component: shader-mesh-gradient-mint",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-mint/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-mint/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Mesh Gradient Peach": {
+      "name": "Shader Mesh Gradient Peach",
+      "description": "Production-ready Remotion component: shader-mesh-gradient-peach",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-peach/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-mesh-gradient-peach/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Mesh Gradient": {
+      "name": "Shader Mesh Gradient",
+      "description": "Production-ready Remotion component: shader-mesh-gradient",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-mesh-gradient/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-mesh-gradient/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Neuro Noise": {
+      "name": "Shader Neuro Noise",
+      "description": "Production-ready Remotion component: shader-neuro-noise",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-neuro-noise/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-neuro-noise/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Perlin Noise": {
+      "name": "Shader Perlin Noise",
+      "description": "Production-ready Remotion component: shader-perlin-noise",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-perlin-noise/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-perlin-noise/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Seam": {
+      "name": "Shader Seam",
+      "description": "Production-ready Remotion component: shader-seam",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-seam/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-seam/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-seam/__tests__/shader-seam.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Smoke Ring": {
+      "name": "Shader Smoke Ring",
+      "description": "Production-ready Remotion component: shader-smoke-ring",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-smoke-ring/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-smoke-ring/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Strata": {
+      "name": "Shader Strata",
+      "description": "Production-ready Remotion component: shader-strata",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-strata/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-strata/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Swirl Ember": {
+      "name": "Shader Swirl Ember",
+      "description": "Production-ready Remotion component: shader-swirl-ember",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-swirl-ember/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-swirl-ember/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Swirl Hypno": {
+      "name": "Shader Swirl Hypno",
+      "description": "Production-ready Remotion component: shader-swirl-hypno",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-swirl-hypno/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-swirl-hypno/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Swirl Neon": {
+      "name": "Shader Swirl Neon",
+      "description": "Production-ready Remotion component: shader-swirl-neon",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-swirl-neon/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-swirl-neon/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Swirl": {
+      "name": "Shader Swirl",
+      "description": "Production-ready Remotion component: shader-swirl",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-swirl/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-swirl/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Text Reveal": {
+      "name": "Shader Text Reveal",
+      "description": "Production-ready Remotion component: shader-text-reveal",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-text-reveal/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-text-reveal/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-text-reveal/__tests__/shader-text-reveal.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Voronoi": {
+      "name": "Shader Voronoi",
+      "description": "Production-ready Remotion component: shader-voronoi",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-voronoi/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-voronoi/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Warp Cream": {
+      "name": "Shader Warp Cream",
+      "description": "Production-ready Remotion component: shader-warp-cream",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-warp-cream/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-warp-cream/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Warp Deep Sea": {
+      "name": "Shader Warp Deep Sea",
+      "description": "Production-ready Remotion component: shader-warp-deep-sea",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-warp-deep-sea/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-warp-deep-sea/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Warp Marble": {
+      "name": "Shader Warp Marble",
+      "description": "Production-ready Remotion component: shader-warp-marble",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-warp-marble/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-warp-marble/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Warp Ocean": {
+      "name": "Shader Warp Ocean",
+      "description": "Production-ready Remotion component: shader-warp-ocean",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-warp-ocean/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-warp-ocean/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Warp Silk": {
+      "name": "Shader Warp Silk",
+      "description": "Production-ready Remotion component: shader-warp-silk",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-warp-silk/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-warp-silk/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Warp Storm": {
+      "name": "Shader Warp Storm",
+      "description": "Production-ready Remotion component: shader-warp-storm",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-warp-storm/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-warp-storm/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Warp Sunset": {
+      "name": "Shader Warp Sunset",
+      "description": "Production-ready Remotion component: shader-warp-sunset",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-warp-sunset/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-warp-sunset/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Warp": {
+      "name": "Shader Warp",
+      "description": "Production-ready Remotion component: shader-warp",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-warp/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-warp/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shader Water": {
+      "name": "Shader Water",
+      "description": "Production-ready Remotion component: shader-water",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/shader-water/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/shader-water/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shared Axis Y": {
+      "name": "Shared Axis Y",
+      "description": "Production-ready Remotion component: shared-axis-y",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/shared-axis-y/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/shared-axis-y/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shared Axis Z": {
+      "name": "Shared Axis Z",
+      "description": "Production-ready Remotion component: shared-axis-z",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/shared-axis-z/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/shared-axis-z/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Sheen Slide In": {
+      "name": "Sheen Slide In",
+      "description": "Production-ready Remotion component: sheen-slide-in",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/sheen-slide-in/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/sheen-slide-in/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Shimmer Sweep": {
+      "name": "Shimmer Sweep",
+      "description": "Production-ready Remotion component: shimmer-sweep",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/shimmer-sweep/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/shimmer-sweep/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Short Slide Down": {
+      "name": "Short Slide Down",
+      "description": "Production-ready Remotion component: short-slide-down",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/short-slide-down/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/short-slide-down/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Short Slide Right": {
+      "name": "Short Slide Right",
+      "description": "Production-ready Remotion component: short-slide-right",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/short-slide-right/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/short-slide-right/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Slot Machine Roll": {
+      "name": "Slot Machine Roll",
+      "description": "Production-ready Remotion component: slot-machine-roll",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/slot-machine-roll/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/slot-machine-roll/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Soft Blur In": {
+      "name": "Soft Blur In",
+      "description": "Production-ready Remotion component: soft-blur-in",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/soft-blur-in/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/soft-blur-in/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Spring Settle": {
+      "name": "Spring Settle",
+      "description": "Production-ready Remotion component: spring-settle",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/spring-settle/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/spring-settle/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Squiggle": {
+      "name": "Squiggle",
+      "description": "Production-ready Remotion component: squiggle",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/squiggle/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/squiggle/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/squiggle/__tests__/squiggle.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Stage": {
+      "name": "Stage",
+      "description": "Production-ready Remotion component: stage",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/stage/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/stage/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/stage/__tests__/stage.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Staggered Fade Up": {
+      "name": "Staggered Fade Up",
+      "description": "Production-ready Remotion component: staggered-fade-up",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/staggered-fade-up/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/staggered-fade-up/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Stretch In": {
+      "name": "Stretch In",
+      "description": "Production-ready Remotion component: stretch-in",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/stretch-in/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/stretch-in/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Swirl Dissolve": {
+      "name": "Swirl Dissolve",
+      "description": "Production-ready Remotion component: swirl-dissolve",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/swirl-dissolve/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/swirl-dissolve/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Terminal Cursor Zoom": {
+      "name": "Terminal Cursor Zoom",
+      "description": "Production-ready Remotion component: terminal-cursor-zoom",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/terminal-cursor-zoom/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/terminal-cursor-zoom/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Terminal Simulator": {
+      "name": "Terminal Simulator",
+      "description": "Production-ready Remotion component: terminal-simulator",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/terminal-simulator/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/terminal-simulator/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Trim Burst": {
+      "name": "Trim Burst",
+      "description": "Production-ready Remotion component: trim-burst",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/trim-burst/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/trim-burst/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/trim-burst/__tests__/trim-burst.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Tv Power Off": {
+      "name": "Tv Power Off",
+      "description": "Production-ready Remotion component: tv-power-off",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/tv-power-off/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/tv-power-off/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Type Fossil": {
+      "name": "Type Fossil",
+      "description": "Production-ready Remotion component: type-fossil",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/type-fossil/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/type-fossil/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/type-fossil/__tests__/type-fossil.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Underwater Ripple": {
+      "name": "Underwater Ripple",
+      "description": "Production-ready Remotion component: underwater-ripple",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/backgrounds/underwater-ripple/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/backgrounds/underwater-ripple/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "V0": {
+      "name": "V0",
+      "description": "Production-ready Remotion component: v0",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/v0/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/v0/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/v0/__tests__/v0.test.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Value Swap": {
+      "name": "Value Swap",
+      "description": "Production-ready Remotion component: value-swap",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/value-swap/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/value-swap/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Volumetric Rays": {
+      "name": "Volumetric Rays",
+      "description": "Production-ready Remotion component: volumetric-rays",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/volumetric-rays/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Word Stream": {
+      "name": "Word Stream",
+      "description": "Production-ready Remotion component: word-stream",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/word-stream/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/word-stream/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Zoom Blur": {
+      "name": "Zoom Blur",
+      "description": "Production-ready Remotion component: zoom-blur",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/transitions/zoom-blur/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/transitions/zoom-blur/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Zoom Words": {
+      "name": "Zoom Words",
+      "description": "Production-ready Remotion component: zoom-words",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/typography/zoom-words/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/typography/zoom-words/index.tsx",
           "type": "registry:component"
         }
       ]

@@ -1,51 +1,92 @@
-import React from "react";
-import { useCurrentFrame, interpolate, Easing } from "remotion";
+"use client";
 
-interface SoftBlurInProps {
-  text?: string;
+import { Easing, interpolate, useCurrentFrame } from "remotion";
+
+export interface SoftBlurInProps {
+  text: string;
+  blur?: number;
   fontSize?: number;
   color?: string;
+  fontWeight?: number;
+  speed?: number;
+  className?: string;
 }
 
-export const SoftBlurIn: React.FC<SoftBlurInProps> = ({
-  text = "Soft Blur In",
+export function SoftBlurIn({
+  text,
+  blur = 12,
   fontSize = 72,
   color = "#171717",
-}) => {
-  const frame = useCurrentFrame();
-  const progress = interpolate(frame, [0, 30], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: Easing.out(Easing.poly(4)),
-  });
+  fontWeight = 600,
+  speed = 1,
+  className,
+}: SoftBlurInProps) {
+  const frame = useCurrentFrame() * speed;
 
-  const opacity = progress;
-  const translateY = interpolate(progress, [0, 1], [30, 0]);
-  const blur = interpolate(progress, [0, 1], [12, 0]);
+  const chars = Array.from(text);
+  const charDurationFrames = 27;
+  const charTravelFrames = 9;
+  const staggerFrames = 1;
 
   return (
     <div
       style={{
+        position: "absolute",
+        inset: 0,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        width: "100%",
-        height: "100%",
+        background: "transparent",
       }}
     >
-      <h1
+      <span
+        className={className}
         style={{
           fontSize,
+          fontWeight,
           color,
-          opacity,
-          transform: `translateY(${translateY}px)`,
-          filter: `blur(${blur}px)`,
-          fontWeight: 700,
-          fontFamily: "var(--font-geist-sans), -apple-system, sans-serif",
+          letterSpacing: "-0.05em",
+          fontFamily:
+            "var(--font-geist-sans), -apple-system, BlinkMacSystemFont, sans-serif",
         }}
       >
-        {text}
-      </h1>
+        {chars.map((char, i) => {
+          const local = frame - i * staggerFrames;
+          const easing = Easing.bezier(0.22, 1, 0.36, 1);
+          const opacity = interpolate(local, [0, charDurationFrames], [0, 1], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+            easing,
+          });
+          const y = interpolate(local, [0, charTravelFrames], [16, 0], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+            easing,
+          });
+          const blurAmount = interpolate(
+            local,
+            [0, charDurationFrames],
+            [blur, 0],
+            { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing },
+          );
+          return (
+            <span
+              key={i}
+              style={{
+                display: "inline-block",
+                whiteSpace: "pre",
+                backfaceVisibility: "hidden",
+                transformOrigin: "50% 55%",
+                opacity,
+                translate: `0 ${y}px`,
+                filter: `blur(${blurAmount}px)`,
+              }}
+            >
+              {char}
+            </span>
+          );
+        })}
+      </span>
     </div>
   );
-};
+}
