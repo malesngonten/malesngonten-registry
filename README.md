@@ -1,24 +1,14 @@
 # MalesNgonten Component Registry 🚀
 
-A curated collection of cinematic, production-ready UI components and terminal simulators for **Remotion**, featuring pitch-preserving audio micro-samples, multi-stage camera zoom, rack-focus blur, and organic typing animations.
+[![Remotion Component Library Live Demo](https://img.shields.io/badge/🌐_Live_Catalog-Remotion_Component_Library-indigo?style=for-the-badge)](https://malesngonten.github.io/malesngonten-registry/)
+
+A curated collection of 250+ cinematic, production-ready UI components, typography animations, backgrounds, transitions, and phone mockups for **Remotion**.
 
 ---
 
-## 🎬 Component Preview (`Terminal-Simulator`)
-
-![Terminal Simulator Preview](https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.gif)
-
----
-
-## Available Components
-
-### 1. Terminal Simulator (`Terminal-Simulator`)
-A state-of-the-art cinematic code typing simulator.
-- **Pitch-Preserving Audio:** Event-driven per-keystroke micro-samples (`key-click.wav`, `key-space.wav`, `key-enter.wav`) ensuring pristine sound pitch regardless of text length.
-- **Camera Tracking & Focal Point:** Dynamic `transformOrigin` tracking cursor X and line Y progress.
-- **Advanced Zoom & Rack-Focus Blur:** 4.4x primary zoom-in, 1.2x secondary zoom-in staying until the end, and 1s ease-out quart rack-focus blur on zoom start.
-- **Cinematic Whoosh:** 80% entrance duration whoosh synced to frame 0.
-- **Dark & Light Mode Support:** Fully responsive surface styling.
+## 🌐 Live Component Catalog
+Explore, search, and copy installation commands for all components at our live website:
+👉 **[https://malesngonten.github.io/malesngonten-registry/](https://malesngonten.github.io/malesngonten-registry/)**
 
 ---
 
@@ -30,10 +20,7 @@ Add components directly to your Remotion project using the `malesngonten` CLI:
 npx malesngonten add Terminal-Simulator
 ```
 
-*(If running directly from GitHub before npm publication:)*
+*(Or directly from GitHub:)*
 ```bash
 npx github:malesngonten/malesngonten add Terminal-Simulator
 ```
-
-### Required Dependencies & Auto-Install
-The CLI will automatically install required dependencies (`remotion`, `@remotion/media`, `zod`).
