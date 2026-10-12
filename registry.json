@@ -13,19 +13,19 @@
       ],
       "files": [
         {
-          "path": "components/terminal-simulator/TypingDemo.tsx",
+          "path": "components/typography/terminal-simulator/TypingDemo.tsx",
           "type": "registry:component"
         },
         {
-          "path": "components/terminal-simulator/liquid-shader.tsx",
+          "path": "components/typography/terminal-simulator/liquid-shader.tsx",
           "type": "registry:component"
         },
         {
-          "path": "components/terminal-simulator/SKILL.md",
+          "path": "components/typography/terminal-simulator/SKILL.md",
           "type": "registry:component"
         }
       ],
-      "preview": "https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/terminal-simulator/assets/preview.mp4"
+      "preview": "https://raw.githubusercontent.com/malesngonten/malesngonten-registry/main/components/typography/terminal-simulator/assets/preview.mp4"
     },
     "Animated-Gradient": {
       "name": "Animated Gradient",
@@ -37,11 +37,33 @@
       ],
       "files": [
         {
-          "path": "components/animated-gradient/animated-gradient.tsx",
+          "path": "components/backgrounds/animated-gradient/animated-gradient.tsx",
           "type": "registry:component"
         },
         {
-          "path": "components/animated-gradient/SKILL.md",
+          "path": "components/backgrounds/animated-gradient/SKILL.md",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Phone-Mockup": {
+      "name": "Phone Mockup",
+      "description": "3D Phone Mockup component for Remotion with GLTF model loading, screen synchronization, and responsive pose controls.",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion",
+        "@remotion/three",
+        "three",
+        "@react-three/fiber",
+        "zod"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/phonemockup/phonemockup.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/phonemockup/SKILL.md",
           "type": "registry:component"
         }
       ]
