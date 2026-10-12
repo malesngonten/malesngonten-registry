@@ -12,7 +12,8 @@ import {
   Cpu, 
   Zap, 
   Smartphone, 
-  X
+  X,
+  Play
 } from 'lucide-react';
 import registryData from '../registry.json';
 
@@ -122,13 +123,13 @@ export default function App() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            <span>1-Click Studio Integration & CLI Ready</span>
+            <span>1-Click Studio Integration & StackBlitz Free Preview</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
             Cinematic Motion for <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">Remotion</span>
           </h2>
           <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
-            Explore a curated collection of production-ready text animations, backgrounds, transitions, and mockups. Add them instantly to your Remotion project.
+            Explore 250+ production-ready components. Test them instantly on StackBlitz or add them to your project via CLI.
           </p>
 
           {/* Search Bar */}
@@ -245,6 +246,21 @@ export default function App() {
               <div>
                 <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Description</h4>
                 <p className="text-slate-300 text-base leading-relaxed">{selectedComponent[1].description}</p>
+              </div>
+
+              {/* StackBlitz Live Playground Action */}
+              <div>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Interactive Preview</h4>
+                <a
+                  href={`https://stackblitz.com/github/malesngonten/malesngonten-registry?file=${encodeURIComponent(selectedComponent[1].files[0]?.path || '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-semibold text-sm flex items-center justify-center space-x-2 shadow-lg shadow-indigo-600/30 transition-all"
+                >
+                  <Play className="w-4 h-4 fill-current" />
+                  <span>Open & Test Live in StackBlitz (Free)</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
 
               {/* Install CLI */}
