@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, Audio, Sequence, staticFile, interpolate, Easing } from "remotion";
 import { z } from "zod";
-import InteractiveNebulaShader from "./components/ui/liquid-shader";
+import InteractiveNebulaShader from "./liquid-shader";
 
 export const typingDemoSchema = z.object({
   codeText: z.string().optional(),

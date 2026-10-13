@@ -1,4 +1,4 @@
-import React, { useState, useMemo, Suspense, lazy } from 'react';
+import React, { useState, useMemo, Suspense } from 'react';
 import { 
   Search, 
   Terminal, 
@@ -12,30 +12,10 @@ import {
   Cpu, 
   Zap, 
   Smartphone, 
-  X,
-  Play,
-  Pause
+  X
 } from 'lucide-react';
-import { Player } from '@remotion/player';
-import registryData from '../registry.json';
-
-interface RegistryFile {
-  path: string;
-  type: string;
-}
-
-interface ComponentEntry {
-  name: string;
-  description: string;
-  type: string;
-  dependencies: string[];
-  files: RegistryFile[];
-  width?: number;
-  height?: number;
-  fps?: number;
-  durationInFrames?: number;
-  inputProps?: Record<string, any>;
-}
+import { Player, Thumbnail } from '@remotion/player';
+import { registryItems, type RegistryItem } from './registry';
 
 const CATEGORIES = [
   { id: 'all', label: 'All Components', icon: Layers },
@@ -44,95 +24,137 @@ const CATEGORIES = [
   { id: 'transitions', label: 'Transitions', icon: Cpu },
   { id: 'mockups', label: 'Phone Mockups', icon: Smartphone },
   { id: 'ui', label: 'UI Components', icon: Code2 },
-];
+] as const;
 
-export function categorizeComponent(path: string, name: string): string {
-  if (path.includes('backgrounds') || name.toLowerCase().includes('shader') || name.toLowerCase().includes('gradient') || name.toLowerCase().includes('crt') || name.toLowerCase().includes('vhs')) {
-    return 'backgrounds';
-  }
-  if (path.includes('typography') || path.includes('caption') || name.toLowerCase().includes('text') || name.toLowerCase().includes('blur') || name.toLowerCase().includes('typing') || name.toLowerCase().includes('letters')) {
-    return 'typography';
-  }
-  if (path.includes('transitions') || name.toLowerCase().includes('zoom') || name.toLowerCase().includes('wipe') || name.toLowerCase().includes('turn') || name.toLowerCase().includes('pan')) {
-    return 'transitions';
-  }
-  if (path.includes('mockups') || name.toLowerCase().includes('phone') || name.toLowerCase().includes('chat') || name.toLowerCase().includes('polaroid') || name.toLowerCase().includes('github')) {
-    return 'mockups';
-  }
-  return 'ui';
-}
-
-// Fallback component for Player preview if dynamic component loading is pending
-const PlaceholderPreview: React.FC<{ name: string; isPlaying: boolean }> = ({ name, isPlaying }) => (
-  <div className="w-full h-full bg-slate-950 flex flex-col items-center justify-center p-4 text-center">
-    <div className="w-12 h-12 rounded-full bg-indigo-600/30 border border-indigo-500/50 flex items-center justify-center mb-3 animate-pulse">
-      {isPlaying ? <Play className="w-5 h-5 text-indigo-400" /> : <Pause className="w-5 h-5 text-indigo-400" />}
-    </div>
-    <span className="text-xs font-bold text-white mb-1">{name}</span>
-    <span className="text-[10px] text-slate-400">Remotion Component Preview</span>
-  </div>
+// Vite glob import for all component entry files (canonical category folders
+// only — excludes the `remocn` symlink duplicate and stray flat helpers).
+const componentModules = import.meta.glob(
+  '../components/{ui,typography,backgrounds,transitions,mockups}/**/*.tsx'
 );
 
-// Component Card with @remotion/player integration
+const lazyComponentCache: Record<string, React.LazyExoticComponent<React.ComponentType<any>>> = {};
+
+function candidateImportPaths(item: RegistryItem): string[] {
+  const dir = `components/${item.category}/${item.slug}`;
+  const listed = item.files.filter((f) => f.endsWith('.tsx') && !f.includes('__tests__'));
+  const unique = new Set<string>([
+    `${dir}/index.tsx`,
+    `${dir}/${item.slug}.tsx`,
+    ...listed,
+  ]);
+  return [...unique].map((p) => `../${p}`);
+}
+
+function getLazyComponent(item: RegistryItem) {
+  const cached = lazyComponentCache[item.id];
+  if (cached) return cached;
+
+  const lazyComp = React.lazy(async () => {
+    for (const importPath of candidateImportPaths(item)) {
+      const importer = componentModules[importPath];
+      if (!importer) continue;
+      try {
+        const mod: any = await importer();
+        const compExport =
+          mod.default || Object.values(mod).find((val: any) => typeof val === 'function');
+        if (compExport) {
+          return { default: compExport };
+        }
+      } catch (e) {
+        console.error(`Failed to load ${importPath}`, e);
+      }
+    }
+    return {
+      default: () => (
+        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#020617', color: '#94a3b8', fontSize: 13, padding: 16, textAlign: 'center' }}>
+          {item.name} Component
+        </div>
+      )
+    };
+  });
+
+  lazyComponentCache[item.id] = lazyComp;
+  return lazyComp;
+}
+
+// Component Card with @remotion/player integration: Thumbnail (static frame 60)
+// by default, full Player (autoPlay, loop, no controls) on hover (desktop) or
+// tap (mobile). Only one Player is ever active.
 function ComponentCard({ 
-  id, 
   comp, 
   isActivePlayer, 
   onActivatePlayer 
 }: { 
-  id: string; 
-  comp: ComponentEntry; 
+  comp: RegistryItem; 
   isActivePlayer: boolean; 
   onActivatePlayer: (id: string | null) => void; 
 }) {
-  const primaryFile = comp.files[0]?.path || '';
-  const cat = categorizeComponent(primaryFile, comp.name);
   const width = comp.width || 1280;
   const height = comp.height || 720;
   const fps = comp.fps || 30;
   const duration = comp.durationInFrames || 120;
-  const aspectClass = width / height < 1 ? 'aspect-[9/16]' : 'aspect-video';
+  const aspectStyle = { aspectRatio: `${width} / ${height}` };
+  const previewBackground = comp.previewBackdrop ?? '#020617';
 
-  // Dynamic Component Loader or fallback placeholder
-  const ComponentComponent = useMemo(() => {
-    return lazy(async () => {
-      try {
-        // Try to import matching component module
-        const mod = await import(/* @vite-ignore */ `../${primaryFile}`);
-        const exportKey = Object.keys(mod).find(k => typeof mod[k] === 'function');
-        return { default: exportKey ? mod[exportKey] : () => <PlaceholderPreview name={comp.name} isPlaying={isActivePlayer} /> };
-      } catch (e) {
-        return { default: () => <PlaceholderPreview name={comp.name} isPlaying={isActivePlayer} /> };
-      }
-    });
-  }, [primaryFile, comp.name, isActivePlayer]);
+  const LazyComp = useMemo(() => getLazyComponent(comp), [comp]);
+
+  const stopPropagation = (e: React.MouseEvent) => e.stopPropagation();
 
   return (
     <div 
       className="group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-2xl p-5 transition-all duration-200 cursor-pointer flex flex-col justify-between shadow-xl hover:shadow-indigo-500/10"
-      onMouseEnter={() => onActivatePlayer(id)}
-      onMouseLeave={() => onActivatePlayer(null)}
-      onClick={() => onActivatePlayer(isActivePlayer ? null : id)}
+      onMouseEnter={(e) => {
+        stopPropagation(e);
+        onActivatePlayer(comp.id);
+      }}
+      onMouseLeave={(e) => {
+        stopPropagation(e);
+        onActivatePlayer(null);
+      }}
+      onTouchStart={() => onActivatePlayer(isActivePlayer ? null : comp.id)}
+      onClick={() => {
+        if (!isActivePlayer) onActivatePlayer(comp.id);
+      }}
     >
       <div>
-        {/* Remotion Player Preview Box */}
-        <div className={`mb-4 w-full ${aspectClass} bg-slate-950 rounded-xl overflow-hidden border border-slate-800 relative shadow-inner`}>
-          <Suspense fallback={<PlaceholderPreview name={comp.name} isPlaying={isActivePlayer} />}>
-            <Player
-              component={ComponentComponent as any}
-              durationInFrames={duration}
-              fps={fps}
-              compositionWidth={width}
-              compositionHeight={height}
-              style={{ width: '100%', height: '100%' }}
-              controls={false}
-              autoPlay={isActivePlayer}
-              loop
-              initialFrame={isActivePlayer ? 0 : 60}
-            />
+        {/* Remotion preview box: static Thumbnail (frame 60) <-> live Player */}
+        <div 
+          className="mb-4 w-full bg-slate-950 rounded-xl overflow-hidden border border-slate-800 relative shadow-inner flex items-center justify-center max-h-[320px]"
+          style={aspectStyle}
+        >
+          <Suspense fallback={
+            <div className="absolute inset-0 flex items-center justify-center bg-slate-950 text-slate-500 text-xs font-mono animate-pulse">
+              Loading preview...
+            </div>
+          }>
+            {!isActivePlayer ? (
+              <Thumbnail
+                component={LazyComp}
+                durationInFrames={duration}
+                fps={fps}
+                compositionWidth={width}
+                compositionHeight={height}
+                frameToDisplay={Math.min(60, Math.max(0, duration - 1))}
+                inputProps={comp.inputProps}
+                style={{ width: '100%', height: '100%', background: previewBackground }}
+              />
+            ) : (
+              <Player
+                component={LazyComp}
+                durationInFrames={duration}
+                fps={fps}
+                compositionWidth={width}
+                compositionHeight={height}
+                style={{ width: '100%', height: '100%', background: previewBackground }}
+                controls={false}
+                autoPlay
+                loop
+                inputProps={comp.inputProps}
+              />
+            )}
           </Suspense>
           {!isActivePlayer && (
-            <div className="absolute inset-0 bg-slate-950/30 pointer-events-none flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="absolute inset-0 bg-slate-950/20 pointer-events-none flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
               <div className="px-3 py-1.5 rounded-lg bg-indigo-600/90 text-white text-xs font-semibold shadow-lg backdrop-blur">
                 Hover to Preview
               </div>
@@ -142,9 +164,9 @@ function ComponentCard({
 
         <div className="flex items-center justify-between mb-2">
           <span className="px-2.5 py-1 rounded-md text-[10px] font-semibold uppercase tracking-wider bg-slate-800 text-slate-300 border border-slate-700">
-            {cat}
+            {comp.category}
           </span>
-          <span className="text-xs font-mono text-slate-500">{comp.files.length} files</span>
+          <span className="text-xs font-mono text-slate-500">{comp.width}×{comp.height}</span>
         </div>
         <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors mb-1.5">
           {comp.name}
@@ -157,7 +179,7 @@ function ComponentCard({
       <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between">
         <div className="flex items-center space-x-1.5 text-xs text-slate-500 font-mono">
           <Package className="w-3.5 h-3.5" />
-          <span>{comp.dependencies.length} deps</span>
+          <span>{comp.dependencies.length || comp.files.length} files</span>
         </div>
         <span className="text-xs font-semibold text-indigo-400 group-hover:translate-x-1 transition-transform inline-flex items-center space-x-1">
           <span>View Details</span>
@@ -171,23 +193,22 @@ function ComponentCard({
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedComponent, setSelectedComponent] = useState<[string, ComponentEntry] | null>(null);
+  const [selectedComponent, setSelectedComponent] = useState<RegistryItem | null>(null);
   const [activePlayerKey, setActivePlayerKey] = useState<string | null>(null);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
 
-  const componentsList = useMemo(() => {
-    return Object.entries(registryData.components || {}) as [string, ComponentEntry][];
-  }, []);
+  const componentsList = registryItems;
 
   const filteredComponents = useMemo(() => {
-    return componentsList.filter(([key, comp]) => {
-      const primaryFile = comp.files[0]?.path || '';
-      const cat = categorizeComponent(primaryFile, comp.name);
-      const matchesCategory = selectedCategory === 'all' || cat === selectedCategory;
-      const matchesSearch = 
-        comp.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        comp.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        key.toLowerCase().includes(searchQuery.toLowerCase());
+    const query = searchQuery.toLowerCase();
+    return componentsList.filter((comp) => {
+      const matchesCategory =
+        selectedCategory === 'all' || comp.category === selectedCategory;
+      const matchesSearch =
+        comp.name.toLowerCase().includes(query) ||
+        comp.description.toLowerCase().includes(query) ||
+        comp.id.includes(query) ||
+        comp.key.toLowerCase().includes(query);
       return matchesCategory && matchesSearch;
     });
   }, [componentsList, selectedCategory, searchQuery]);
@@ -223,7 +244,7 @@ export default function App() {
               className="flex items-center space-x-2 px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 text-sm font-medium transition-colors text-slate-200"
             >
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.33 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
               </svg>
               <span>GitHub</span>
             </a>
@@ -237,7 +258,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-xs font-semibold mb-6">
             <Zap className="w-3.5 h-3.5" />
-            <span>Powered by @remotion/player & React.lazy</span>
+            <span>Powered by @remotion/player</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
             Cinematic Motion for <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">Remotion</span>
@@ -286,12 +307,11 @@ export default function App() {
 
         {/* Component Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredComponents.map(([key, comp]) => (
-            <div key={key} onClick={() => setSelectedComponent([key, comp])}>
+          {filteredComponents.map((comp) => (
+            <div key={comp.id} onClick={() => setSelectedComponent(comp)}>
               <ComponentCard 
-                id={key} 
                 comp={comp} 
-                isActivePlayer={activePlayerKey === key} 
+                isActivePlayer={activePlayerKey === comp.id} 
                 onActivatePlayer={(id) => setActivePlayerKey(id)} 
               />
             </div>
@@ -315,9 +335,9 @@ export default function App() {
             <div className="px-6 py-5 border-b border-slate-800 flex items-center justify-between bg-slate-900/90">
               <div>
                 <span className="text-xs font-semibold uppercase tracking-wider text-indigo-400">
-                  {categorizeComponent(selectedComponent[1].files[0]?.path || '', selectedComponent[1].name)}
+                  {selectedComponent.category}
                 </span>
-                <h3 className="text-2xl font-bold text-white mt-0.5">{selectedComponent[1].name}</h3>
+                <h3 className="text-2xl font-bold text-white mt-0.5">{selectedComponent.name}</h3>
               </div>
               <button
                 onClick={() => setSelectedComponent(null)}
@@ -332,7 +352,7 @@ export default function App() {
               {/* Description */}
               <div>
                 <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Description</h4>
-                <p className="text-slate-300 text-base leading-relaxed">{selectedComponent[1].description}</p>
+                <p className="text-slate-300 text-base leading-relaxed">{selectedComponent.description}</p>
               </div>
 
               {/* Install CLI */}
@@ -341,10 +361,10 @@ export default function App() {
                 <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 flex items-center justify-between font-mono text-sm">
                   <div className="flex items-center space-x-2 text-indigo-300 overflow-x-auto">
                     <Terminal className="w-4 h-4 text-slate-500 shrink-0" />
-                    <span>npx github:malesngonten/malesngonten add {selectedComponent[0]}</span>
+                    <span>npx github:malesngonten/malesngonten add {selectedComponent.slug}</span>
                   </div>
                   <button
-                    onClick={() => handleCopy(`npx github:malesngonten/malesngonten add ${selectedComponent[0]}`, 'install')}
+                    onClick={() => handleCopy(`npx github:malesngonten/malesngonten add ${selectedComponent.slug}`, 'install')}
                     className="ml-3 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-medium flex items-center space-x-1.5 transition-colors shrink-0"
                   >
                     {copiedKey === 'install' ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
@@ -353,27 +373,45 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Dependencies */}
+              {/* Composition */}
               <div>
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Dependencies</h4>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Composition</h4>
                 <div className="flex flex-wrap gap-2">
-                  {selectedComponent[1].dependencies.map((dep) => (
-                    <span key={dep} className="px-3 py-1 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 text-xs font-mono">
-                      {dep}
-                    </span>
-                  ))}
+                  <span className="px-3 py-1 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 text-xs font-mono">
+                    {selectedComponent.width}×{selectedComponent.height}
+                  </span>
+                  <span className="px-3 py-1 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 text-xs font-mono">
+                    {selectedComponent.fps} fps
+                  </span>
+                  <span className="px-3 py-1 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 text-xs font-mono">
+                    {selectedComponent.durationInFrames} frames
+                  </span>
                 </div>
               </div>
+
+              {/* Dependencies */}
+              {selectedComponent.dependencies.length > 0 && (
+                <div>
+                  <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Dependencies</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedComponent.dependencies.map((dep) => (
+                      <span key={dep} className="px-3 py-1 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 text-xs font-mono">
+                        {dep}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Component Files */}
               <div>
                 <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Included Files</h4>
                 <div className="space-y-2">
-                  {selectedComponent[1].files.map((file) => (
-                    <div key={file.path} className="flex items-center justify-between bg-slate-950/60 border border-slate-800/80 rounded-xl px-4 py-2.5 font-mono text-xs text-slate-300">
-                      <span>{file.path}</span>
+                  {selectedComponent.files.map((file) => (
+                    <div key={file} className="flex items-center justify-between bg-slate-950/60 border border-slate-800/80 rounded-xl px-4 py-2.5 font-mono text-xs text-slate-300">
+                      <span>{file}</span>
                       <a
-                        href={`https://github.com/malesngonten/malesngonten-registry/blob/main/${file.path}`}
+                        href={`https://github.com/malesngonten/malesngonten-registry/blob/main/${file}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-indigo-400 hover:underline flex items-center space-x-1"
@@ -390,7 +428,7 @@ export default function App() {
             {/* Modal Footer */}
             <div className="px-6 py-4 border-t border-slate-800 bg-slate-900/90 flex items-center justify-between">
               <a
-                href={`https://github.com/malesngonten/malesngonten-registry/tree/main/${selectedComponent[1].files[0]?.path.split('/')[0] === 'components' ? '' : 'components/'}${selectedComponent[1].files[0]?.path}`}
+                href={`https://github.com/malesngonten/malesngonten-registry/tree/main/${selectedComponent.files[0] ?? ''}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-sm font-medium text-slate-300 hover:text-white transition-colors"

@@ -1,0 +1,5266 @@
+{
+  "ui/a1-product-demo": {
+    "key": "A1 Product Demo",
+    "category": "ui",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/agent-run": {
+    "key": "Agent Run",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 355,
+    "inputProps": {
+      "theme": "light",
+      "accentColor": "#2563eb",
+      "compression": 3,
+      "seed": 1
+    },
+    "backdrop": "#ececea",
+    "inRegistry": true
+  },
+  "ui/animated-bar-chart": {
+    "key": "Animated Bar Chart",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "barColor": "#0ea5e9",
+      "gap": 16,
+      "staggerFrames": 6
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/animated-line-chart": {
+    "key": "Animated Line Chart",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "strokeColor": "#22c55e",
+      "strokeWidth": 4,
+      "gridColor": "#27272a",
+      "showDot": true
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/ascii-render": {
+    "key": "Ascii Render",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "glyphSize": 26,
+      "charset": " .:-=+*#%@",
+      "colored": false,
+      "ink": "#9dff9d",
+      "intensity": 1
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/bauhaus-build": {
+    "key": "Bauhaus Build",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "scale": 1,
+      "seed": 1,
+      "inkColor": "#1c1a17",
+      "accentColor": "#e4572e",
+      "secondaryColor": "#cbbc9f",
+      "tertiaryColor": "#7e776b",
+      "loop": false
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "ui/brush": {
+    "key": "Brush",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/camera-lens": {
+    "key": "Camera Lens",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "softness": 0.5,
+      "bloom": 0.5,
+      "aberration": 0.5,
+      "vignette": 0.5,
+      "distortion": 0.05
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/caret-swap": {
+    "key": "Caret Swap",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 100,
+    "inputProps": {
+      "fromText": "Executing it?",
+      "toText": "That's where everyone quits",
+      "fontSize": 72,
+      "swapAt": 20,
+      "typeSpeed": 1,
+      "color": "#171717",
+      "caretColor": "#FF4DAA",
+      "caretColorEnd": "#8A5CF6",
+      "fontWeight": "400"
+    },
+    "backdrop": "#fdf6f0",
+    "inRegistry": true
+  },
+  "ui/check-list": {
+    "key": "Check List",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 360,
+    "inputProps": {
+      "fontSize": 40,
+      "itemGap": 18,
+      "closeGap": 9,
+      "perStep": 1.6,
+      "strokeWidth": 3,
+      "color": "#26242c",
+      "tickColor": "#6f7f35",
+      "step": 3
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "ui/chromatic-wave": {
+    "key": "Chromatic Wave",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 100,
+    "inputProps": {
+      "headline": "MUSIC",
+      "kicker": "APPLES",
+      "fill": "#ffffff",
+      "waveHeight": 28,
+      "maxDisplacementPx": 39,
+      "turbulentAmount": 130
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/code-morph": {
+    "key": "Code Morph",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 138,
+    "inputProps": {
+      "filename": "invoices.tsx",
+      "theme": "dark",
+      "accentColor": "#0ea5e9",
+      "morphDuration": 36,
+      "fontSize": 20,
+      "highlight": true,
+      "lineNumbers": true,
+      "windowDots": true
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "ui/confetti": {
+    "key": "Confetti",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "particleCount": 140,
+      "power": 17,
+      "gravity": 0.45,
+      "size": 13,
+      "seed": 1
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/crumple-toss": {
+    "key": "Crumple Toss",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "at": 6,
+      "crumpleSteps": 4,
+      "tossSteps": 5,
+      "direction": -35,
+      "distance": 440,
+      "spin": 220,
+      "segments": 9,
+      "layers": 2,
+      "randomness": 0.6,
+      "crushTo": 0.34,
+      "seed": "toss",
+      "step": 3
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "ui/cursor-gravity": {
+    "key": "Cursor Gravity",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 180,
+    "inputProps": {
+      "label": "Create something",
+      "tension": 1,
+      "cursorColor": "#fffaf0",
+      "color": "#fffaf0",
+      "textColor": "#32153c",
+      "backgroundColor": "#a800b7"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/displacement": {
+    "key": "Displacement",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 72,
+    "inputProps": {
+      "grid": 60,
+      "cellAspect": 1,
+      "shift": 1,
+      "aberration": 1,
+      "grain": 0.5,
+      "stagger": 0.45
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/drift": {
+    "key": "Drift",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "grow": 0.035
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "ui/ecosystem-constellation": {
+    "key": "Ecosystem Constellation",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 240,
+    "inputProps": {
+      "satelliteCount": 6,
+      "centerLabel": "V",
+      "accentColor": "#a855f7"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/ember-burn": {
+    "key": "Ember Burn",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 80,
+    "inputProps": {
+      "patches": 5,
+      "edgeSoftness": 0.07,
+      "contentBias": 0.6,
+      "heat": 0.5,
+      "glowColor": "#ff7a2f",
+      "emberAmount": 0.5
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/extrude-pop": {
+    "key": "Extrude Pop",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "letter": "WIN",
+      "bodyColor": "#e8192b",
+      "faceColor": "#ffffff",
+      "minimaxRadius": 80,
+      "extrudeAngleDeg": -58.6,
+      "extrudeEndFrame": 48
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "ui/glass-code-block": {
+    "key": "Glass Code Block",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 180,
+    "inputProps": {
+      "title": "hero.tsx",
+      "width": 760,
+      "height": 460,
+      "fontSize": 16,
+      "glassColor": "rgba(10, 10, 10, 0.6)",
+      "staggerFrames": 4,
+      "showTrafficLights": true
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/glass-code-walk": {
+    "key": "Glass Code Walk",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "title": "scene.tsx",
+      "zoom": 2.6,
+      "fontSize": 18,
+      "staggerFrames": 10,
+      "width": 880,
+      "height": 420
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/gooey-morph": {
+    "key": "Gooey Morph",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "word": "HELLO",
+      "fill": "#f2f2f2",
+      "fontFamily": "'Bodoni Moda', Georgia, serif",
+      "blurRadius": 6,
+      "displaceAmount": 20,
+      "barTravelFrames": 30
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "ui/grid-wave": {
+    "key": "Grid Wave",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 84,
+    "inputProps": {
+      "tileSize": 90,
+      "waveWidth": 0.16,
+      "lift": 2,
+      "gap": 0.12,
+      "tint": "#8fb4ff",
+      "direction": "ripple"
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/halftone-print": {
+    "key": "Halftone Print",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "dotSize": 10,
+      "angle": 0,
+      "misregistration": 1.2,
+      "paperTint": "#f4efe4"
+    },
+    "backdrop": "#26231d",
+    "inRegistry": true
+  },
+  "ui/hand-count": {
+    "key": "Hand Count",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "to": 1284,
+      "from": 0,
+      "durationSteps": 18,
+      "decimals": 0,
+      "prefix": "",
+      "suffix": "",
+      "fontSize": 96,
+      "color": "#26242c",
+      "ease": "in-out",
+      "seed": "count",
+      "step": 3
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "ui/icon-scatter": {
+    "key": "Icon Scatter",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 100,
+    "inputProps": {
+      "count": 15,
+      "color": "#fafafa",
+      "coverColor": "#0a0a0a",
+      "flyDistance": 260
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/infinite-bento-pan": {
+    "key": "Infinite Bento Pan",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 300,
+    "inputProps": {
+      "panSpeed": 1,
+      "accentColor": "#7c3aed"
+    },
+    "backdrop": "#050505",
+    "inRegistry": true
+  },
+  "ui/infinite-marquee": {
+    "key": "Infinite Marquee",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 180,
+    "inputProps": {
+      "text": "ship · build · animate · ",
+      "fontSize": 120,
+      "color": "#171717",
+      "fontWeight": "700",
+      "pixelsPerFrame": 4,
+      "stroke": false,
+      "strokeColor": "#171717"
+    },
+    "backdrop": "#fafafa",
+    "inRegistry": true
+  },
+  "ui/ink-arrow": {
+    "key": "Ink Arrow",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "curvature": 0.35,
+      "strokeWidth": 8,
+      "pressure": 0.2,
+      "release": 1,
+      "grain": 1,
+      "headSize": 24,
+      "drawDur": 36,
+      "headDur": 12,
+      "color": "#26242c",
+      "seed": "arrow",
+      "step": 3
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "ui/ink-underline": {
+    "key": "Ink Underline",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "width": 420,
+      "color": "#6f7f35",
+      "thickness": 9,
+      "pressure": 1,
+      "release": 0.15,
+      "grain": 1,
+      "durationSteps": 5,
+      "seed": "ink",
+      "step": 3
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "ui/keystroke": {
+    "key": "Keystroke",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 180,
+    "inputProps": {
+      "platform": "mac",
+      "theme": "light",
+      "accent": "#0a84ff",
+      "size": 64,
+      "linger": 30,
+      "x": 0.5,
+      "y": 0.86
+    },
+    "backdrop": "#e9e9e5",
+    "inRegistry": true
+  },
+  "ui/live-code-compilation": {
+    "key": "Live Code Compilation",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 260,
+    "inputProps": {
+      "accentColor": "#3b82f6"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/logo-enter": {
+    "key": "Logo Enter",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "diameter": 118,
+      "overlap": 38,
+      "ringColor": "#fff",
+      "orientation": "horizontal",
+      "stagger": 7
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "ui/marker-highlight": {
+    "key": "Marker Highlight",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "before": "Made for ",
+      "highlight": "builders",
+      "after": ".",
+      "markerColor": "#facc15",
+      "baseColor": "#171717",
+      "highlightedTextColor": "#171717",
+      "fontSize": 72,
+      "fontWeight": "600"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/mask-reveal-up": {
+    "key": "Mask Reveal Up",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "Designed to move.\\nBuilt to focus.",
+      "distance": 30,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "ui/mondrian-split": {
+    "key": "Mondrian Split",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 145,
+    "inputProps": {
+      "seed": 7,
+      "splits": 7,
+      "lineWeight": 14,
+      "expandCell": 0,
+      "lineColor": "#121212",
+      "redColor": "#d62d20",
+      "yellowColor": "#f4c20d",
+      "blueColor": "#1f4e9e",
+      "fieldColor": "#d62d20"
+    },
+    "backdrop": "#f3efe6",
+    "inRegistry": true
+  },
+  "ui/number-wheel": {
+    "key": "Number Wheel",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 112,
+    "inputProps": {
+      "from": 0,
+      "to": 24813,
+      "fontSize": 120,
+      "color": "#171717"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "ui/opencode": {
+    "key": "Opencode",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "placeholder": "Ask anything... ",
+      "query": "\"What is the tech stack of this project?\"",
+      "agentName": "Build",
+      "modelName": "Kimi K2.5",
+      "provider": "Moonshot AI",
+      "accentColor": "#2B7FFF"
+    },
+    "backdrop": "#000000",
+    "inRegistry": true
+  },
+  "ui/perspective-marquee": {
+    "key": "Perspective Marquee",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 240,
+    "inputProps": {
+      "fontSize": 84,
+      "color": "#fafafa",
+      "fontWeight": "700",
+      "pixelsPerFrame": 2,
+      "rotateY": -28,
+      "rotateX": 8,
+      "perspective": 1200,
+      "fadeColor": "#050505"
+    },
+    "backdrop": "#050505",
+    "inRegistry": true
+  },
+  "ui/pixelate-region": {
+    "key": "Pixelate Region",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "cellSize": 24
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/radial-burst": {
+    "key": "Radial Burst",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "segments": 8,
+      "radius": 210,
+      "thickness": 30,
+      "rotation": 135,
+      "intensity": 1,
+      "twist": 110,
+      "echoes": 3,
+      "color": "#ffffff",
+      "accentColor": "#f4e4a7",
+      "backgroundColor": "#a800b7",
+      "loop": false
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/reel": {
+    "key": "Reel",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 160,
+    "inputProps": {
+      "width": 1180,
+      "height": 676,
+      "radius": 16,
+      "step": 20,
+      "reveal": 13
+    },
+    "backdrop": "#0b0b0c",
+    "inRegistry": true
+  },
+  "ui/rgb-glitch-text": {
+    "key": "Rgb Glitch Text",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "GLITCH",
+      "fontSize": 96,
+      "color": "#171717",
+      "fontWeight": "700",
+      "glitchAt": 20,
+      "glitchDuration": 8,
+      "intensity": 6,
+      "seed": "glitch"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/scene-motion": {
+    "key": "Scene Motion",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/scribble-circle": {
+    "key": "Scribble Circle",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "laps": 1.15,
+      "strokeWidth": 14,
+      "pressure": 0.2,
+      "grain": 1,
+      "durationSteps": 10,
+      "color": "#6f7f35",
+      "seed": "scribble",
+      "step": 3
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "ui/search-reveal": {
+    "key": "Search Reveal",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 108,
+    "inputProps": {
+      "text": "remocn",
+      "fieldWidth": 464,
+      "fontSize": 34,
+      "framesPerCharacter": 4,
+      "showPanel": true,
+      "showGuides": true,
+      "color": "#26232b",
+      "fieldColor": "#ffffff",
+      "ringColor": "#cbc5cf",
+      "panelColor": "#a800b7",
+      "accentColor": "#e8f99a",
+      "backgroundColor": "#f5f1f5",
+      "reducedMotion": false
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/selection-snap": {
+    "key": "Selection Snap",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 75,
+    "inputProps": {
+      "text": "Frame",
+      "color": "#fafafa",
+      "accent": "#ff4d1a",
+      "selectionColor": "#3d5afe",
+      "fontSize": 150,
+      "fromWeight": 100,
+      "toWeight": 900,
+      "badge": true
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/simulated-cursor": {
+    "key": "Simulated Cursor",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "color": "#ffffff",
+      "size": 32
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/speed-lines": {
+    "key": "Speed Lines",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 55,
+    "inputProps": {
+      "mode": "trail",
+      "count": 12,
+      "weight": 2,
+      "spread": 96,
+      "duration": 14,
+      "bounce": 0.5,
+      "squash": 0.5,
+      "x": 0.5,
+      "y": 0.5,
+      "delay": 0,
+      "color": "#ffffff",
+      "seed": 1
+    },
+    "backdrop": "#002fa7",
+    "inRegistry": true
+  },
+  "ui/squiggle": {
+    "key": "Squiggle",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 80,
+    "inputProps": {
+      "shape": "wave",
+      "color": "#ffffff",
+      "weight": 3,
+      "amplitude": 14,
+      "wavelength": 48,
+      "length": 320,
+      "angle": 0,
+      "x": 0.375,
+      "y": 0.5,
+      "settle": 0.5,
+      "hold": 12,
+      "erase": true,
+      "delay": 0
+    },
+    "backdrop": "#002fa7",
+    "inRegistry": true
+  },
+  "ui/stage": {
+    "key": "Stage",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 300,
+    "inputProps": {
+      "preset": "smooth-descent",
+      "shake": 0,
+      "seed": "remocn-smooth-descent",
+      "backdrop": "linear-gradient(145deg, #17181d 0%, #09090b 72%)",
+      "rotateX": 14,
+      "rotateY": -20,
+      "perspective": 900,
+      "scale": 0.86,
+      "radius": 1.4,
+      "reflection": 0.24,
+      "shadow": 0.7,
+      "light": 0.55
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/stop-motion": {
+    "key": "Stop Motion",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "ui/sustained-glitch": {
+    "key": "Sustained Glitch",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "intensity": 1,
+      "frequency": 1,
+      "slices": 24,
+      "seed": 1
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "ui/trim-burst": {
+    "key": "Trim Burst",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 42,
+    "inputProps": {
+      "count": 8,
+      "innerRadius": 16,
+      "reach": 64,
+      "strokeLength": 56,
+      "weight": 2,
+      "rotation": 0,
+      "spread": 360,
+      "jitter": 0.5,
+      "dots": false,
+      "cap": "round",
+      "color": "#ffffff",
+      "seed": 1,
+      "delay": 0,
+      "x": 0.5,
+      "y": 0.5
+    },
+    "backdrop": "#002fa7",
+    "inRegistry": true
+  },
+  "ui/truchet-flip": {
+    "key": "Truchet Flip",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "tiles": 10,
+      "weight": 0.2,
+      "passes": 2,
+      "waveMode": "radial",
+      "resolve": "rings",
+      "variant": "stroke",
+      "color": "#ffffff",
+      "secondaryColor": "#ffffff",
+      "seed": 1,
+      "loop": false
+    },
+    "backdrop": "#002fa7",
+    "inRegistry": true
+  },
+  "ui/volumetric-rays": {
+    "key": "Volumetric Rays",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/blur-out-up": {
+    "key": "Blur Out Up",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "Clear in, airy out.",
+      "staggerDelay": 1,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/bottom-up-letters": {
+    "key": "Bottom Up Letters",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "Shift",
+      "staggerDelay": 3,
+      "distance": 46,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/caption-active-pop": {
+    "key": "Caption Active Pop",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "activeColor": "#facc15",
+      "popScale": 1.12,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-blur-in": {
+    "key": "Caption Blur In",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "blur": 12,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-bounce-in": {
+    "key": "Caption Bounce In",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "bounce": 0.6,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-core": {
+    "key": "Caption Core",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/caption-cube": {
+    "key": "Caption Cube",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "tintActive": false,
+      "activeColor": "#facc15",
+      "combineTokensWithinMilliseconds": 800,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-dim-progress": {
+    "key": "Caption Dim Progress",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "dimOpacity": 0.35,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-drop": {
+    "key": "Caption Drop",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "bounce": 0.6,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-emoji": {
+    "key": "Caption Emoji",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "emojiSize": 0.9,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-handwrite": {
+    "key": "Caption Handwrite",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "wobble": 1,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-highlight-box": {
+    "key": "Caption Highlight Box",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "activeColor": "#0a0a0a",
+      "boxColor": "#facc15",
+      "boxRadius": 0.16,
+      "boxPadding": 0.14,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-karaoke": {
+    "key": "Caption Karaoke",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "activeColor": "#facc15",
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-knockout": {
+    "key": "Caption Knockout",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "plateColor": "#ffffff",
+      "upcomingOpacity": 0.15,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-label-maker": {
+    "key": "Caption Label Maker",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "tapeColor": "#18181b",
+      "combineTokensWithinMilliseconds": 1000,
+      "holdMs": 600,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-marker": {
+    "key": "Caption Marker",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "markerColor": "#facc15",
+      "markerTextColor": "#0a0a0a",
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-outline": {
+    "key": "Caption Outline",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "activeColor": "#facc15",
+      "strokeColor": "#000000",
+      "strokeWidth": 0.12,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-prosody": {
+    "key": "Caption Prosody",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "activeColor": "#facc15",
+      "minScale": 0.75,
+      "maxScale": 1.6,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-redact": {
+    "key": "Caption Redact",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "barColor": "#0a0a0a",
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-rise": {
+    "key": "Caption Rise",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-scramble": {
+    "key": "Caption Scramble",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "glyphColor": "#a3a3a3",
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-slice": {
+    "key": "Caption Slice",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "distance": 0.6,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-slot": {
+    "key": "Caption Slot",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "combineTokensWithinMilliseconds": 800,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-speaker": {
+    "key": "Caption Speaker",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "upcomingOpacity": 0.4,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-split-flap": {
+    "key": "Caption Split Flap",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 56,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "tileColor": "#111111",
+      "combineTokensWithinMilliseconds": 1000,
+      "holdMs": 600,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-stack": {
+    "key": "Caption Stack",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "emphasisColor": "#facc15",
+      "emphasisScale": 1.7,
+      "combineTokensWithinMilliseconds": 1600,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-stamp": {
+    "key": "Caption Stamp",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "stampColor": "#ef4444",
+      "texture": true,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-subtitle": {
+    "key": "Caption Subtitle",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 44,
+      "fontWeight": 600,
+      "color": "#ffffff",
+      "combineTokensWithinMilliseconds": 2500,
+      "holdMs": 600,
+      "box": true,
+      "boxColor": "#000000",
+      "boxOpacity": 0.72,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-teleprompter": {
+    "key": "Caption Teleprompter",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "visibleLines": 3,
+      "pastOpacity": 0.35,
+      "futureOpacity": 0.35,
+      "upcomingOpacity": 0.55,
+      "combineTokensWithinMilliseconds": 1500,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-timeline": {
+    "key": "Caption Timeline",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "playheadColor": "#facc15",
+      "width": 1100,
+      "pxPerSecond": 260,
+      "playheadPosition": 0.35,
+      "upcomingOpacity": 0.4,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-typewriter": {
+    "key": "Caption Typewriter",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "caret": true,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-underline": {
+    "key": "Caption Underline",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "underlineColor": "#facc15",
+      "thickness": 0.08,
+      "underlineOffset": 0.02,
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-weight": {
+    "key": "Caption Weight",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 64,
+      "fontWeight": 400,
+      "activeWeight": 900,
+      "color": "#ffffff",
+      "combineTokensWithinMilliseconds": 1200,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/caption-word-pop": {
+    "key": "Caption Word Pop",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 339,
+    "inputProps": {
+      "fontSize": 96,
+      "fontWeight": 800,
+      "color": "#ffffff",
+      "popScale": 0.6,
+      "combineTokensWithinMilliseconds": 0,
+      "holdMs": 600,
+      "shadow": true,
+      "captions": [
+        {
+          "text": "This is a preview transcript ",
+          "startMs": 0,
+          "endMs": 1400
+        },
+        {
+          "text": "so you can see the caption styling ",
+          "startMs": 1500,
+          "endMs": 3200
+        },
+        {
+          "text": "and how words sync over time. ",
+          "startMs": 3300,
+          "endMs": 4800
+        },
+        {
+          "text": "Each sentence becomes its own page, ",
+          "startMs": 5000,
+          "endMs": 6700
+        },
+        {
+          "text": "words light up as they are spoken, ",
+          "startMs": 6800,
+          "endMs": 8400
+        },
+        {
+          "text": "and pages hold for a moment. ",
+          "startMs": 8500,
+          "endMs": 9900
+        }
+      ]
+    },
+    "backdrop": "#262626",
+    "inRegistry": true
+  },
+  "typography/centered-word-build": {
+    "key": "Centered Word Build",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 75,
+    "inputProps": {
+      "text": "everything we learn from",
+      "fontSize": 52,
+      "wordGap": 11,
+      "accel": 0.75,
+      "rise": 0.18,
+      "zoomStep": 0.035,
+      "settleFrames": 9,
+      "exitAt": 51,
+      "exitFrames": 12,
+      "color": "#fff3df",
+      "fontWeight": "400"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/echo-stack": {
+    "key": "Echo Stack",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "text": "Bold.",
+      "color": "#fafafa",
+      "echoColor": "#fafafa",
+      "direction": "up",
+      "fontSize": 170,
+      "echoes": 3,
+      "echoOpacity": 0.35,
+      "cycle": 60
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "typography/fade-through": {
+    "key": "Fade Through",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "fromText": "Calm transitions.",
+      "toText": "Fade through content.",
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/focus-blur-resolve": {
+    "key": "Focus Blur Resolve",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "Focus resolves clearly.",
+      "blur": 14,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/focus-pull": {
+    "key": "Focus Pull",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 114,
+    "inputProps": {
+      "blur": 16
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "typography/fog-rise": {
+    "key": "Fog Rise",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "Remocn",
+      "fontSize": 304,
+      "stagger": 5,
+      "blur": 0.17,
+      "tilt": 55,
+      "depth": 5,
+      "lift": 0.85,
+      "drift": 0.005,
+      "exitAt": 60,
+      "exitAccel": 0.04,
+      "mass": 1.3,
+      "stiffness": 60,
+      "damping": 13,
+      "spreadGap": 0.07,
+      "tracking": -0.07,
+      "resolveFrames": 22,
+      "fadeFrames": 18,
+      "color": "#004CFF",
+      "fontWeight": "400"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/glyph-anatomy": {
+    "key": "Glyph Anatomy",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 96,
+    "inputProps": {
+      "text": "Glyph",
+      "color": "#fafafa",
+      "guideColor": "#0d99ff",
+      "fontSize": 200,
+      "guides": true,
+      "keepPoints": false
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "typography/gradient-scale-cut-text": {
+    "key": "Gradient Scale Cut Text",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 36,
+    "inputProps": {
+      "text": "Introducing",
+      "giantFontSize": 520,
+      "compactFontSize": 132,
+      "anchorOffsetX": -16,
+      "giantTravel": 400,
+      "settleTravel": 160,
+      "cutFrame": 13,
+      "revealSoftness": 14,
+      "compactBlur": 12,
+      "gradientStart": "#f04a14",
+      "gradientEnd": "#f3f1f1",
+      "ghostColor": "#170b0a",
+      "backgroundColor": "#000000",
+      "fontWeight": "700"
+    },
+    "backdrop": "#000000",
+    "inRegistry": true
+  },
+  "typography/handwrite": {
+    "key": "Handwrite",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "text": "Made by hand",
+      "fontSize": 72,
+      "perStep": 1.6,
+      "weight": "600",
+      "color": "#26242c",
+      "align": "center",
+      "step": 3
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "typography/inline-highlight": {
+    "key": "Inline Highlight",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "before": "Ship faster with ",
+      "highlight": "remocn",
+      "after": ".",
+      "baseColor": "#171717",
+      "highlightColor": "#ff5e3a",
+      "fontSize": 72,
+      "fontWeight": "600"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/inline-pill-takeover": {
+    "key": "Inline Pill Takeover",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 45,
+    "inputProps": {
+      "before": "powering 20%",
+      "insert": "Start building",
+      "after": "of the Internet.",
+      "fontSize": 52,
+      "pillWidth": 260,
+      "expandFrames": 12,
+      "pillRevealHeightScale": 0.35,
+      "pillGrowAt": 12,
+      "pillGrowFrames": 24,
+      "pillGrowWidthScale": 1.08,
+      "pillGrowHeightScale": 1.16,
+      "outerExitFrames": 18,
+      "takeoverAt": 12,
+      "takeoverScale": 2.15,
+      "blur": 12,
+      "color": "#fff3df",
+      "pillColor": "#fffaf0",
+      "pillTextColor": "#1c1210",
+      "fontWeight": "400"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/inline-word-roll": {
+    "key": "Inline Word Roll",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 105,
+    "inputProps": {
+      "prefix": "Looking for",
+      "suffix": "?",
+      "fontSize": 60,
+      "interval": 12,
+      "acceleration": 0.9,
+      "transitionFrames": 6,
+      "color": "#f5f5f5"
+    },
+    "backdrop": "#000000",
+    "inRegistry": true
+  },
+  "typography/kinetic-center-build": {
+    "key": "Kinetic Center Build",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "Words push left.",
+      "entryOffset": 88,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/kinetic-morph-text": {
+    "key": "Kinetic Morph Text",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 288,
+    "inputProps": {
+      "text": "Hello | Make it move | Shape what's next",
+      "fontSize": 100,
+      "fontWeight": "600",
+      "spread": 180,
+      "rotation": 110,
+      "morph": 0.75,
+      "trails": 0.45,
+      "transitionFrames": 54,
+      "holdFrames": 42,
+      "loop": false,
+      "color": "#b4f4d9",
+      "backgroundColor": "#a800b7"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/line-by-line-slide": {
+    "key": "Line By Line Slide",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "Think different.\\nDo more.",
+      "distance": 48,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/micro-scale-fade": {
+    "key": "Micro Scale Fade",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "Welcome to motion.",
+      "scaleFrom": 0.96,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/outline-fill-track-text": {
+    "key": "Outline Fill Track Text",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 80,
+    "inputProps": {
+      "leadText": "Keep",
+      "valueText": "1000000000%",
+      "fontSize": 368,
+      "enterOffset": 240,
+      "anchorOffsetX": -84,
+      "trackDistance": 0,
+      "wordGap": 220,
+      "endPadding": 96,
+      "fillDuration": 38,
+      "outlineWidth": 3,
+      "color": "#f4f3f6",
+      "outlineColor": "#e6e2ed",
+      "backgroundColor": "#030012",
+      "glowColor": "#64109a",
+      "fontWeight": "700"
+    },
+    "backdrop": "#030012",
+    "inRegistry": true
+  },
+  "typography/outline-trace": {
+    "key": "Outline Trace",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 75,
+    "inputProps": {
+      "text": "Outline",
+      "color": "#111111",
+      "strokeColor": "#111111",
+      "fontSize": 150,
+      "strokeWidth": 2.5,
+      "stagger": 3,
+      "fill": true,
+      "keepStroke": false
+    },
+    "backdrop": "#ff4d1a",
+    "inRegistry": true
+  },
+  "typography/paper-sticker": {
+    "key": "Paper Sticker",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "at": 0,
+      "padding": "10px 16px",
+      "background": "#fbfaf6",
+      "maxTilt": 2.6,
+      "seed": "sticker",
+      "step": 3
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "typography/paper-wobble": {
+    "key": "Paper Wobble",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "amp": 1.4,
+      "rotAmp": 0.35,
+      "seed": "wobble",
+      "step": 3
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "typography/path-ride": {
+    "key": "Path Ride",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 96,
+    "inputProps": {
+      "text": "Follow the line",
+      "color": "#111111",
+      "lineColor": "#fafafa",
+      "fontSize": 44,
+      "fontWeight": 700,
+      "lineWidth": 3
+    },
+    "backdrop": "#ff4d1a",
+    "inRegistry": true
+  },
+  "typography/per-character-rise": {
+    "key": "Per Character Rise",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "One more thing.",
+      "distance": 32,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/per-word-crossfade": {
+    "key": "Per Word Crossfade",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "fromText": "Beautifully simple.",
+      "toText": "Designed for focus.",
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/period-drop": {
+    "key": "Period Drop",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 75,
+    "inputProps": {
+      "text": "remocn",
+      "color": "#fafafa",
+      "dotColor": "#ff4d1a",
+      "fontSize": 160,
+      "fontWeight": 800,
+      "dotSize": 0.2
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "typography/perspective-squeeze": {
+    "key": "Perspective Squeeze",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 225,
+    "inputProps": {
+      "upperText": "REMOCN",
+      "lowerText": "BEST",
+      "fill": "#f2f2f2",
+      "upperFontFamily": "Impact, 'Arial Narrow', sans-serif",
+      "lowerFontFamily": "Impact, 'Arial Narrow', sans-serif",
+      "lineGap": 50
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "typography/push-through": {
+    "key": "Push Through",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 112,
+    "inputProps": {
+      "zoom": 2.4,
+      "blur": 14
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "typography/ring-text": {
+    "key": "Ring Text",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 180,
+    "inputProps": {
+      "text": "Type in motion",
+      "separator": "•",
+      "color": "#d4ff1f",
+      "band": "#0a0a0a",
+      "radius": 210,
+      "fontSize": 40,
+      "tilt": 38,
+      "roll": -16,
+      "period": 240
+    },
+    "backdrop": "#d4ff1f",
+    "inRegistry": true
+  },
+  "typography/rolling-number": {
+    "key": "Rolling Number",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "from": 0,
+      "to": 24813,
+      "fontSize": 120,
+      "color": "#171717"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/rolodex-flip": {
+    "key": "Rolodex Flip",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 110,
+    "inputProps": {
+      "interval": 20,
+      "flipDuration": 10
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "typography/rush-type": {
+    "key": "Rush Type",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "phrase": "gone before you look",
+      "fontSize": 68,
+      "fontWeight": "400",
+      "color": "#ffffff",
+      "backgroundColor": "#000000",
+      "verticalStretch": 7,
+      "chromaticSpread": 1,
+      "restDuration": 12,
+      "peakHoldDuration": 3
+    },
+    "backdrop": "#000000",
+    "inRegistry": true
+  },
+  "typography/scale-down-fade": {
+    "key": "Scale Down Fade",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "Quietly refined.",
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/shadow-sweep-text": {
+    "key": "Shadow Sweep Text",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 37,
+    "inputProps": {
+      "text": "are abandoned",
+      "fontSize": 96,
+      "rise": 96,
+      "driftLeft": 16,
+      "shadowSoftness": 130,
+      "color": "#aaa6b5",
+      "backgroundColor": "#030012",
+      "shadowColor": "#030012",
+      "fontWeight": "700"
+    },
+    "backdrop": "#030012",
+    "inRegistry": true
+  },
+  "typography/sheen-slide-in": {
+    "key": "Sheen Slide In",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 70,
+    "inputProps": {
+      "text": "Introducing",
+      "exitAt": 60,
+      "fontSize": 72,
+      "baseColor": "#18181b",
+      "sheenColor": "#4f8ef7",
+      "fontWeight": "400"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/shimmer-sweep": {
+    "key": "Shimmer Sweep",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "text": "Generating",
+      "baseColor": "#3f3f46",
+      "shineColor": "#fafafa",
+      "fontSize": 96,
+      "fontWeight": "700"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/short-slide-down": {
+    "key": "Short Slide Down",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "Build from above.",
+      "entryOffset": 28,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/short-slide-right": {
+    "key": "Short Slide Right",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "Move with intent.",
+      "distance": 24,
+      "staggerDelay": 3,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/slide-swap": {
+    "key": "Slide Swap",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 210,
+    "inputProps": {
+      "axis": "x",
+      "inDistance": 0.28,
+      "outDistance": 0.1,
+      "slideFrames": 30
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "typography/slot-machine-roll": {
+    "key": "Slot Machine Roll",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "from": "$99",
+      "to": "$199",
+      "fontSize": 120,
+      "color": "#171717",
+      "fontWeight": "700"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/soft-blur-in": {
+    "key": "Soft Blur In",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "Think different.",
+      "blur": 12,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/spring-scale-in": {
+    "key": "Spring Scale In",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "Fast. Crisp. Fluid.",
+      "staggerDelay": 3,
+      "scaleFrom": 0.7,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/spring-settle": {
+    "key": "Spring Settle",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 213,
+    "inputProps": {
+      "enterScale": 1.24,
+      "enterStagger": 3,
+      "exitScale": 0.84,
+      "exitFrames": 6
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "typography/squeeze-in": {
+    "key": "Squeeze In",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "Remocn",
+      "fontSize": 72,
+      "stagger": 3,
+      "squeeze": 0.03,
+      "color": "#171717",
+      "fontWeight": "400"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/staggered-fade-up": {
+    "key": "Staggered Fade Up",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "Ship faster with remocn",
+      "staggerDelay": 4,
+      "distance": 20,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/stretch-in": {
+    "key": "Stretch In",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "REMOCN",
+      "fill": "#ffffff",
+      "fontSize": 510,
+      "entryStagger": 3,
+      "travelFrames": 33,
+      "vertexLagFrames": 3.5
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "typography/strikethrough-replace": {
+    "key": "Strikethrough Replace",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "from": "$49/mo",
+      "to": "Free",
+      "lineColor": "#ff5e3a",
+      "fontSize": 96,
+      "color": "#171717",
+      "fontWeight": "700"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/stripe-type": {
+    "key": "Stripe Type",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 100,
+    "inputProps": {
+      "text": "Launch",
+      "color": "#fafafa",
+      "settle": "striped",
+      "fontSize": 180,
+      "fontWeight": 800,
+      "stripes": 8,
+      "gap": 0.35,
+      "hold": 30,
+      "exit": true
+    },
+    "backdrop": "#2b3bff",
+    "inRegistry": true
+  },
+  "typography/terminal-cursor-zoom": {
+    "key": "Terminal Cursor Zoom",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "command": "npx shadcn add @remocn/terminal-cursor-zoom",
+      "zoom": 2.8,
+      "fontSize": 20,
+      "prompt": "$",
+      "title": "~/code/remocn-demo"
+    },
+    "backdrop": "#0B0B0C",
+    "inRegistry": true
+  },
+  "typography/terminal-simulator": {
+    "key": "Terminal Simulator",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/top-down-letters": {
+    "key": "Top Down Letters",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 60,
+    "inputProps": {
+      "text": "Signal",
+      "staggerDelay": 3,
+      "distance": 46,
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/tracking-in": {
+    "key": "Tracking In",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "tracking in",
+      "startTracking": 0.5,
+      "startBlur": 12,
+      "fontSize": 96,
+      "color": "#171717",
+      "fontWeight": "700"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/type-fossil": {
+    "key": "Type Fossil",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "text": "Form",
+      "layers": 16,
+      "depth": 100,
+      "fontSize": 220,
+      "fontWeight": "600",
+      "color": "#302b26",
+      "accentColor": "#a800b7",
+      "backgroundColor": "#eeeae2"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/type-repeater": {
+    "key": "Type Repeater",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 100,
+    "inputProps": {
+      "text": "Repeat",
+      "mode": "tunnel",
+      "color": "#111111",
+      "accent": "#fafafa",
+      "copies": 12,
+      "fontSize": 110,
+      "fontWeight": 800,
+      "outline": true
+    },
+    "backdrop": "#ff4d1a",
+    "inRegistry": true
+  },
+  "typography/type-wall": {
+    "key": "Type Wall",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "text": "MOTION",
+      "separator": "·",
+      "color": "#fafafa",
+      "accent": "#ff4d1a",
+      "accentText": "#111111",
+      "fontSize": 64,
+      "seed": 7
+    },
+    "backdrop": "#2b3bff",
+    "inRegistry": true
+  },
+  "typography/typed-split-wipe": {
+    "key": "Typed Split Wipe",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 75,
+    "inputProps": {
+      "prefix": "Introducing",
+      "anchor": "X",
+      "suffix": "Ads MCP",
+      "typeFrames": 30,
+      "exitAt": 50,
+      "exitFrames": 20,
+      "wordStagger": 4,
+      "anchorShift": -72,
+      "fontSize": 42,
+      "color": "#e8e8e8",
+      "fontWeight": "400"
+    },
+    "backdrop": "#101010",
+    "inRegistry": true
+  },
+  "typography/typewriter": {
+    "key": "Typewriter",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "text": "console.log('hello, world')",
+      "cursor": true,
+      "charsPerSecond": 22,
+      "fontSize": 72,
+      "color": "#171717",
+      "cursorColor": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "typography/value-swap": {
+    "key": "Value Swap",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 100,
+    "inputProps": {
+      "duration": 10,
+      "distance": 12,
+      "direction": "up"
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "typography/word-push": {
+    "key": "Word Push",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "move at your own pace",
+      "fontSize": 72,
+      "wordGap": 10,
+      "accel": 0.8,
+      "color": "#171717",
+      "fontWeight": "400"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/word-stream": {
+    "key": "Word Stream",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 100,
+    "inputProps": {
+      "text": "introducing | one-tap checkout | for your store",
+      "fontSize": 72,
+      "wordGap": 6,
+      "hold": 18,
+      "drift": 2,
+      "color": "#171717",
+      "fontWeight": "400"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "typography/zoom-words": {
+    "key": "Zoom Words",
+    "category": "typography",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 75,
+    "inputProps": {
+      "text": "Still piecing together tools",
+      "fontSize": 64,
+      "wordGap": 12,
+      "zoom": 2.2,
+      "anchor": 0.5,
+      "blur": 0.04,
+      "blurFrames": 60,
+      "color": "#cfc2ff",
+      "fontWeight": "400"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/animated-gradient": {
+    "key": "Animated Gradient",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": false
+  },
+  "backgrounds/backdrop": {
+    "key": "Backdrop",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "fillType": "gradient",
+      "color": "#6366f1",
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #a855f7 100%)",
+      "image": "/hero.png",
+      "padding": 4,
+      "radius": 1,
+      "shadow": "0 20px 60px rgba(0,0,0,0.4)"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/canvas-presentation": {
+    "key": "Canvas Presentation",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/crt-screen": {
+    "key": "Crt Screen",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "curvature": 1,
+      "scanlines": 1,
+      "maskScale": 2,
+      "vignette": 1
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "backgrounds/dither-dissolve": {
+    "key": "Dither Dissolve",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 100,
+    "inputProps": {
+      "shape": "simplex",
+      "colorBack": "#141318",
+      "colorFront": "#8f88ae"
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "backgrounds/grain-dissolve": {
+    "key": "Grain Dissolve",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 116,
+    "inputProps": {
+      "shape": "blob",
+      "noise": 0.3,
+      "zoom": 2,
+      "colorBack": "#141318"
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "backgrounds/hologram": {
+    "key": "Hologram",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "tint": "#63e8ff",
+      "glow": 1,
+      "ghost": 1,
+      "flicker": 1,
+      "intensity": 1
+    },
+    "backdrop": "#04070d",
+    "inRegistry": true
+  },
+  "backgrounds/kinetic-warp": {
+    "key": "Kinetic Warp",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "text": "REM\\nOCN",
+      "textColor": "#FFFFFF",
+      "fontFamily": "Passion One",
+      "fontUrl": "https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=block",
+      "fontWeight": "700",
+      "fontSize": 107.1,
+      "layerScale": 480,
+      "keyframeStride": 20
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/matrix-decode": {
+    "key": "Matrix Decode",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "text": "DECRYPTED",
+      "charset": "!@#$%^&*()_+-=<>?/\\\\|",
+      "fontSize": 72,
+      "color": "#22c55e",
+      "fontWeight": "600",
+      "revealDuration": 60
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/particle-dissolve": {
+    "key": "Particle Dissolve",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 84,
+    "inputProps": {
+      "particleSize": 4,
+      "scatter": 0.08,
+      "shimmer": 0.6,
+      "aberration": 0.5,
+      "direction": "reveal",
+      "stagger": 0.55
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "backgrounds/shader-caustics": {
+    "key": "Shader Caustics",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "scale": 5.2,
+      "intensity": 1,
+      "accent": "#7F57FF",
+      "accentAmount": 0
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-color-panels": {
+    "key": "Shader Color Panels",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "density": 3,
+      "length": 1.1,
+      "colorBack": "#12121a"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-dithering": {
+    "key": "Shader Dithering",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "size": 2,
+      "colorBack": "#12121a",
+      "colorFront": "#6a6a85"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-dot-orbit": {
+    "key": "Shader Dot Orbit",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "size": 1,
+      "spreading": 1,
+      "colorBack": "#12121a"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-gem-smoke": {
+    "key": "Shader Gem Smoke",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "colorBack": "#0a0a10",
+      "innerDistortion": 0.8,
+      "outerDistortion": 0.6,
+      "size": 0.8
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-god-rays": {
+    "key": "Shader God Rays",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "intensity": 0.8,
+      "density": 0.3,
+      "bloom": 0.4,
+      "colorBack": "#12121a"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-grain-gradient": {
+    "key": "Shader Grain Gradient",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "softness": 0.6,
+      "intensity": 0.2,
+      "noise": 0.15,
+      "colorBack": "#12121a"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-grain-gradient-arcade": {
+    "key": "Shader Grain Gradient Arcade",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-grain-gradient-blush": {
+    "key": "Shader Grain Gradient Blush",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-grain-gradient-dune": {
+    "key": "Shader Grain Gradient Dune",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-grain-gradient-horizon": {
+    "key": "Shader Grain Gradient Horizon",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-grain-gradient-nebula": {
+    "key": "Shader Grain Gradient Nebula",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-grain-gradient-orb": {
+    "key": "Shader Grain Gradient Orb",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-grain-gradient-sunrise": {
+    "key": "Shader Grain Gradient Sunrise",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-grain-gradient-tide": {
+    "key": "Shader Grain Gradient Tide",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-grain-gradient-ultraviolet": {
+    "key": "Shader Grain Gradient Ultraviolet",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-light-tunnel": {
+    "key": "Shader Light Tunnel",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "speed": 1,
+      "twist": 0.7,
+      "spirals": 3,
+      "glow": 1,
+      "depth": 1,
+      "timeOffset": 0
+    },
+    "backdrop": "#05050a",
+    "inRegistry": true
+  },
+  "backgrounds/shader-liquid-metal": {
+    "key": "Shader Liquid Metal",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "distortion": 0.1,
+      "repetition": 1.5,
+      "contour": 0.4,
+      "colorBack": "#2a2a30",
+      "colorTint": "#8a8a95"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-mesh-gradient": {
+    "key": "Shader Mesh Gradient",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "distortion": 0.6,
+      "swirl": 0.1
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-mesh-gradient-aurora": {
+    "key": "Shader Mesh Gradient Aurora",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-mesh-gradient-dusk": {
+    "key": "Shader Mesh Gradient Dusk",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-mesh-gradient-ember": {
+    "key": "Shader Mesh Gradient Ember",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-mesh-gradient-ink": {
+    "key": "Shader Mesh Gradient Ink",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-mesh-gradient-lagoon": {
+    "key": "Shader Mesh Gradient Lagoon",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-mesh-gradient-lavender": {
+    "key": "Shader Mesh Gradient Lavender",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-mesh-gradient-mint": {
+    "key": "Shader Mesh Gradient Mint",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-mesh-gradient-peach": {
+    "key": "Shader Mesh Gradient Peach",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-mesh-gradient-synthwave": {
+    "key": "Shader Mesh Gradient Synthwave",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-metaballs": {
+    "key": "Shader Metaballs",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "count": 10,
+      "size": 0.83,
+      "colorBack": "#12121a"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-neuro-noise": {
+    "key": "Shader Neuro Noise",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "brightness": 0.05,
+      "contrast": 0.3,
+      "colorBack": "#12121a",
+      "colorMid": "#4a4a68"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-perlin-noise": {
+    "key": "Shader Perlin Noise",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "proportion": 0.35,
+      "softness": 0.1,
+      "colorBack": "#12121a",
+      "colorFront": "#6a6a85"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-pulsing-border": {
+    "key": "Shader Pulsing Border",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "thickness": 0.1,
+      "roundness": 0.25,
+      "intensity": 0.2,
+      "colorBack": "#12121a"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-seam": {
+    "key": "Shader Seam",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 156,
+    "inputProps": {
+      "softness": 0.18,
+      "detail": 0.65,
+      "timeOffset": 0,
+      "speed": 0
+    },
+    "backdrop": "#14121c",
+    "inRegistry": true
+  },
+  "backgrounds/shader-simplex-noise": {
+    "key": "Shader Simplex Noise",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "stepsPerColor": 2,
+      "softness": 0.1
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-smoke-ring": {
+    "key": "Shader Smoke Ring",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "radius": 0.25,
+      "thickness": 0.65,
+      "scale": 0.8,
+      "colorBack": "#12121a"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-spiral": {
+    "key": "Shader Spiral",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "density": 1,
+      "strokeWidth": 0.5,
+      "softness": 0.2,
+      "colorBack": "#12121a"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-spiral-pass": {
+    "key": "Shader Spiral Pass",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 168,
+    "inputProps": {
+      "speed": 1,
+      "spirals": 3,
+      "twist": 0.7,
+      "zoom": 14,
+      "softness": 0.12,
+      "timeOffset": 0
+    },
+    "backdrop": "#15111c",
+    "inRegistry": true
+  },
+  "backgrounds/shader-strata": {
+    "key": "Shader Strata",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "layers": 14,
+      "amplitude": 0.16,
+      "accent": "#6733FF",
+      "accentAmount": 0
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-swirl": {
+    "key": "Shader Swirl",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "bandCount": 4,
+      "twist": 0.1,
+      "softness": 0.2,
+      "colorBack": "#12121a"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-swirl-candy": {
+    "key": "Shader Swirl Candy",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-swirl-citrus": {
+    "key": "Shader Swirl Citrus",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-swirl-ember": {
+    "key": "Shader Swirl Ember",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-swirl-hypno": {
+    "key": "Shader Swirl Hypno",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-swirl-lilac": {
+    "key": "Shader Swirl Lilac",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-swirl-neon": {
+    "key": "Shader Swirl Neon",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-swirl-retro": {
+    "key": "Shader Swirl Retro",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-swirl-sunburst": {
+    "key": "Shader Swirl Sunburst",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-swirl-tide": {
+    "key": "Shader Swirl Tide",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-text-reveal": {
+    "key": "Shader Text Reveal",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 75,
+    "inputProps": {
+      "text": "Your product",
+      "fontSize": 400,
+      "wordDuration": 30,
+      "intensity": 1
+    },
+    "backdrop": "#000000",
+    "inRegistry": true
+  },
+  "backgrounds/shader-voronoi": {
+    "key": "Shader Voronoi",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "distortion": 0.4,
+      "gap": 0.04,
+      "glow": 0,
+      "colorGap": "#12121a"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-warp": {
+    "key": "Shader Warp",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "distortion": 0.2,
+      "swirl": 0.4,
+      "softness": 1,
+      "proportion": 0.5
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-warp-acid": {
+    "key": "Shader Warp Acid",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-warp-cream": {
+    "key": "Shader Warp Cream",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-warp-deep-sea": {
+    "key": "Shader Warp Deep Sea",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-warp-marble": {
+    "key": "Shader Warp Marble",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-warp-ocean": {
+    "key": "Shader Warp Ocean",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-warp-rose-gold": {
+    "key": "Shader Warp Rose Gold",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-warp-silk": {
+    "key": "Shader Warp Silk",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-warp-storm": {
+    "key": "Shader Warp Storm",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-warp-sunset": {
+    "key": "Shader Warp Sunset",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-water": {
+    "key": "Shader Water",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "waves": 0.3,
+      "caustic": 0.08,
+      "highlights": 0.06,
+      "colorBack": "#16202b"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/shader-weave": {
+    "key": "Shader Weave",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "speed": 1,
+      "scale": 22,
+      "warp": 0.03,
+      "accent": "#6733FF",
+      "accentAmount": 0
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "backgrounds/swirl-dissolve": {
+    "key": "Swirl Dissolve",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 116,
+    "inputProps": {
+      "bandCount": 10,
+      "softness": 0.35,
+      "colorBack": "#141318"
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "backgrounds/underwater-ripple": {
+    "key": "Underwater Ripple",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "amplitude": 7,
+      "scale": 1,
+      "speed": 2,
+      "dispersion": 1
+    },
+    "backdrop": "#06171c",
+    "inRegistry": true
+  },
+  "backgrounds/vhs-filter": {
+    "key": "Vhs Filter",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "bleed": 1,
+      "wobble": 1,
+      "noise": 1,
+      "intensity": 1
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "backgrounds/warp-dissolve": {
+    "key": "Warp Dissolve",
+    "category": "backgrounds",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 116,
+    "inputProps": {
+      "distortion": 0.8,
+      "swirl": 0.6,
+      "softness": 1
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "transitions/ascii-dissolve": {
+    "key": "Ascii Dissolve",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 100,
+    "inputProps": {
+      "colorBack": "#0d0d10",
+      "colorFront": "#f2f2f2",
+      "cellSize": 22
+    },
+    "backdrop": "#0d0d10",
+    "inRegistry": true
+  },
+  "transitions/caret-wipe": {
+    "key": "Caret Wipe",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 100,
+    "inputProps": {
+      "direction": "right",
+      "caretColor": "#C3E88D",
+      "caretWidth": 3
+    },
+    "backdrop": "#0d0d10",
+    "inRegistry": true
+  },
+  "transitions/glitch-cut": {
+    "key": "Glitch Cut",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 78,
+    "inputProps": {
+      "intensity": 1,
+      "slices": 24,
+      "rgbSplit": 1,
+      "blockNoise": 0.6
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "transitions/lens-zoom": {
+    "key": "Lens Zoom",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 112,
+    "inputProps": {
+      "lensSteps": 9,
+      "blurSamples": 7,
+      "shakeAmount": 50,
+      "shakeTranslatePx": 73
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "transitions/page-turn": {
+    "key": "Page Turn",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 128,
+    "inputProps": {
+      "angle": -7,
+      "poses": 8
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "transitions/perlin-dissolve": {
+    "key": "Perlin Dissolve",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 116,
+    "inputProps": {
+      "colorFront": "#8f88ae",
+      "colorBack": "#141318",
+      "softness": 0.1
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "transitions/ripple-zoom": {
+    "key": "Ripple Zoom",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 116,
+    "inputProps": {
+      "zoom": 4,
+      "intensity": 0.5,
+      "softness": 0.5,
+      "colorBack": "#141318"
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "transitions/shared-axis-y": {
+    "key": "Shared Axis Y",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "fromText": "Layered navigation.",
+      "toText": "Hierarchy made clear.",
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "transitions/shared-axis-z": {
+    "key": "Shared Axis Z",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "fromText": "Zooming between states.",
+      "toText": "Elevate and settle.",
+      "fontSize": 72,
+      "color": "#171717",
+      "fontWeight": "600"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  },
+  "transitions/smoke-dissolve": {
+    "key": "Smoke Dissolve",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 116,
+    "inputProps": {
+      "ringColor": "#8f88ae",
+      "colorBack": "#141318"
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "transitions/tv-power-off": {
+    "key": "Tv Power Off",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 62,
+    "inputProps": {
+      "durationInFrames": 18,
+      "gain": 1,
+      "afterglow": 1,
+      "phosphor": "#d8ecff"
+    },
+    "backdrop": "#050505",
+    "inRegistry": true
+  },
+  "transitions/wave-wipe": {
+    "key": "Wave Wipe",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 116,
+    "inputProps": {
+      "intensity": 0.2,
+      "softness": 0.7,
+      "noise": 0.4,
+      "colorBack": "#141318"
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "transitions/whip-pan": {
+    "key": "Whip Pan",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 114,
+    "inputProps": {
+      "direction": "left",
+      "blur": 24
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "transitions/zoom-blur": {
+    "key": "Zoom Blur",
+    "category": "transitions",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 114,
+    "inputProps": {
+      "blur": 16,
+      "rise": 0
+    },
+    "backdrop": "#141318",
+    "inRegistry": true
+  },
+  "mockups/chat-gpt": {
+    "key": "Chat Gpt",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "greeting": "What's on your mind today?",
+      "placeholder": "Ask anything",
+      "prompt": "Make a sunset over a calm ocean",
+      "accentColor": "#2F6FED"
+    },
+    "backdrop": "#FFFFFF",
+    "inRegistry": true
+  },
+  "mockups/chat-to-preview-layout": {
+    "key": "Chat To Preview Layout",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "startChatRatio": 0.5,
+      "endChatRatio": 0.25
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "mockups/claude-chat": {
+    "key": "Claude Chat",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "greeting": "Back at it, Dima",
+      "placeholder": "Try: draft an email · summarize a doc · plan your week",
+      "prompt": "Draft a launch tweet for our new release",
+      "modelName": "Opus 4.8",
+      "modelTier": "Max",
+      "accentColor": "#D97757"
+    },
+    "backdrop": "#F5F4EF",
+    "inRegistry": true
+  },
+  "mockups/claude-code": {
+    "key": "Claude Code",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 160,
+    "inputProps": {
+      "title": "Claude Code v2.0.0",
+      "userName": "Remocn",
+      "model": "Opus 4.8 • Max 20x",
+      "cwd": "/users/remocn/code/apps",
+      "placeholder": "Try \"edit <filepath> to ...\"",
+      "prompt": "edit src/theme.ts to add a dark mode toggle",
+      "accentColor": "#D97757"
+    },
+    "backdrop": "#2B2A28",
+    "inRegistry": true
+  },
+  "mockups/github-sponsors": {
+    "key": "Github Sponsors",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 270,
+    "inputProps": {
+      "account": "remocn",
+      "accentColor": "#db61a2",
+      "theme": "light"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "mockups/github-stars": {
+    "key": "Github Stars",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {
+      "repo": "Remocn/remocn",
+      "totalStars": 24813,
+      "orientation": "horizontal",
+      "accentColor": "#ffbb00",
+      "theme": "light"
+    },
+    "backdrop": null,
+    "inRegistry": true
+  },
+  "mockups/phonemockup": {
+    "key": "Phonemockup",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": false
+  },
+  "mockups/polaroid": {
+    "key": "Polaroid",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "caption": "first light",
+      "captionAt": 0,
+      "width": 652,
+      "captionSize": 36,
+      "step": 3
+    },
+    "backdrop": "#f1eee7",
+    "inRegistry": true
+  },
+  "mockups/security-cam": {
+    "key": "Security Cam",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 90,
+    "inputProps": {
+      "compression": 0.7,
+      "blockSize": 10,
+      "noise": 0.6,
+      "intensity": 1
+    },
+    "backdrop": "#0a0a0a",
+    "inRegistry": true
+  },
+  "mockups/terminal-simulator": {
+    "key": "Terminal Simulator",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 240,
+    "inputProps": {
+      "prompt": "$",
+      "title": "~/projects/remocn",
+      "background": "#0a0a0a",
+      "chromeColor": "#1a1a1a",
+      "fontSize": 18,
+      "charsPerFrame": 1,
+      "chunkSize": 1
+    },
+    "backdrop": "#050505",
+    "inRegistry": true
+  },
+  "mockups/v0": {
+    "key": "V0",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 150,
+    "inputProps": {
+      "greeting": "What do you want to create?",
+      "placeholder": "Ask v0 to build…",
+      "prompt": "a landing page for my SaaS with pricing and testimonials",
+      "modelName": "v0 Max",
+      "projectName": "Project"
+    },
+    "backdrop": "#000000",
+    "inRegistry": true
+  },
+  "mockups/x-follow-card": {
+    "key": "X Follow Card",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 165,
+    "inputProps": {
+      "name": "remocn",
+      "handle": "remocn",
+      "bio": "Production-ready components for Remotion - text animations, backgrounds, transitions, UI blocks, and full scene compositions",
+      "avatarUrl": "/logo.svg",
+      "coverUrl": "/imgs/x-cover.png",
+      "location": "Ukraine",
+      "website": "remocn.dev",
+      "joined": "January 2024",
+      "verified": true,
+      "accentColor": "#1d9bf0",
+      "orientation": "horizontal"
+    },
+    "backdrop": "#f5f7f9",
+    "inRegistry": true
+  },
+  "mockups/x-followers-overview": {
+    "key": "X Followers Overview",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 360,
+    "inputProps": {
+      "totalFollowers": 1709,
+      "handle": "remocn",
+      "avatarUrl": "/logo.svg",
+      "accentColor": "#1d9bf0",
+      "orientation": "horizontal"
+    },
+    "backdrop": "#ffffff",
+    "inRegistry": true
+  }
+}
