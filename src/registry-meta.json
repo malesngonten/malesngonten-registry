@@ -565,6 +565,17 @@
     "backdrop": "#e9e9e5",
     "inRegistry": true
   },
+  "ui/liquid-shader": {
+    "key": "Liquid Shader",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 120,
+    "inputProps": {},
+    "backdrop": null,
+    "inRegistry": false
+  },
   "ui/live-code-compilation": {
     "key": "Live Code Compilation",
     "category": "ui",
@@ -1017,6 +1028,24 @@
       "loop": false
     },
     "backdrop": "#002fa7",
+    "inRegistry": true
+  },
+  "ui/typing-demo": {
+    "key": "Typing Demo",
+    "category": "ui",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 300,
+    "inputProps": {
+      "mode": "light",
+      "codeText": "import React from \\\"react\\\";\\nimport { interpolate, useCurrentFrame, AbsoluteFill } from \\\"remotion\\\";\\n\\nexport const CinematicTerminal = ({ title = \\\"Remotion Studio\\\" }) => {\\n  const frame = useCurrentFrame();\\n  \\n  const opacity = interpolate(frame, [0, 30], [0, 1], {\\n    extrapolateRight: \\\"clamp\\\",\\n  });\\n\\n  const scale = interpolate(frame, [0, 45], [0.9, 1], {\\n    extrapolateRight: \\\"clamp\\\",\\n  });\\n\\n  return (\\n    <AbsoluteFill style={{ opacity, transform: `scale(${scale})` }}>\\n      <div className=\\\"terminal-header\\\">\\n        <span>{title}</span>\\n      </div>\\n      <div className=\\\"terminal-body\\\">\\n        <p>Rendering cinematic frames at 60fps...</p>\\n      </div>\\n    </AbsoluteFill>\\n  );\\n};",
+      "enableWhoosh": true,
+      "whooshVolume": 0.18,
+      "enableTypingAudio": true,
+      "typingVolume": 0.5
+    },
+    "backdrop": "#090d16",
     "inRegistry": true
   },
   "ui/volumetric-rays": {
@@ -5204,6 +5233,20 @@
       "chunkSize": 1
     },
     "backdrop": "#050505",
+    "inRegistry": true
+  },
+  "mockups/three-phone-demo": {
+    "key": "Three Phone Demo",
+    "category": "mockups",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 300,
+    "inputProps": {
+      "theme": "silver",
+      "view": "front"
+    },
+    "backdrop": "#f1f5f9",
     "inRegistry": true
   },
   "mockups/v0": {

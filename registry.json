@@ -4761,6 +4761,49 @@
           "type": "registry:component"
         }
       ]
+    },
+    "Typing Demo": {
+      "name": "Typing Demo",
+      "description": "Production-ready Remotion component: typing-demo",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/typing-demo/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/typing-demo/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/liquid-shader/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "Three Phone Demo": {
+      "name": "Three Phone Demo",
+      "description": "Production-ready Remotion component: three-phone-demo",
+      "type": "registry:component",
+      "dependencies": [
+        "remotion",
+        "@remotion/three",
+        "three",
+        "@react-three/fiber"
+      ],
+      "files": [
+        {
+          "path": "components/mockups/three-phone-demo/config.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/mockups/three-phone-demo/index.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   }
 }
