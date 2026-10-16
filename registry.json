@@ -4769,6 +4769,24 @@
       "dependencies": [
         "remotion"
       ],
+      "publicAssets": [
+        {
+          "path": "components/typography/terminal-simulator/assets/audio/fire-whoosh.wav",
+          "dest": "public/audio/fire-whoosh.wav"
+        },
+        {
+          "path": "components/typography/terminal-simulator/assets/audio/key-click.wav",
+          "dest": "public/audio/key-click.wav"
+        },
+        {
+          "path": "components/typography/terminal-simulator/assets/audio/key-space.wav",
+          "dest": "public/audio/key-space.wav"
+        },
+        {
+          "path": "components/typography/terminal-simulator/assets/audio/key-enter.wav",
+          "dest": "public/audio/key-enter.wav"
+        }
+      ],
       "files": [
         {
           "path": "components/ui/typing-demo/config.ts",
@@ -4793,6 +4811,24 @@
         "@remotion/three",
         "three",
         "@react-three/fiber"
+      ],
+      "publicAssets": [
+        {
+          "path": "public/3d/iphone_blue.glb",
+          "dest": "public/3d/iphone_blue.glb"
+        },
+        {
+          "path": "public/3d/iphone_black.glb",
+          "dest": "public/3d/iphone_black.glb"
+        },
+        {
+          "path": "public/3d/iphone_green.glb",
+          "dest": "public/3d/iphone_green.glb"
+        },
+        {
+          "path": "public/3d/iphone_red.glb",
+          "dest": "public/3d/iphone_red.glb"
+        }
       ],
       "files": [
         {
