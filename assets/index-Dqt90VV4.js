@@ -1,0 +1,1 @@
+import{u as o,a as n,i,j as u,A as l}from"./index-DfUQpdcJ.js";function m({children:s,grow:e=.035}){const t=o(),{durationInFrames:r}=n(),a=i(t,[0,r],[1,1+e]);return u.jsx(l,{style:{scale:`${a}`},children:s})}export{m as Drift};
